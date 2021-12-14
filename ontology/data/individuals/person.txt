@@ -1,0 +1,24 @@
+
+###  http://sparql.ilch.uminho.pt/minors#person-Cavaco_Silva
+:person-Cavaco_Silva rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :hasJob :job-político ;          
+                      :personName "Cavaco Silva"^^xsd:string .
+
+            
+###  http://sparql.ilch.uminho.pt/minors#person-António_Costa
+:person-António_Costa rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :hasJob :job-político ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/António_Costa"^^xsd:anyURI ;          
+                      :personName "António Costa"^^xsd:string .
+
+            
+###  http://rdf.entigraph.pt/corpus#person-Ant-nio_Costa
+:person-Ant-nio_Costa rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Político"^^xsd:string ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/António_Costa"^^xsd:anyURI ;          
+                      :personName "António Costa"^^xsd:string .
+
+            

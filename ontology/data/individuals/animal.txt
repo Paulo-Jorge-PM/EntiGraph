@@ -1,0 +1,19 @@
+
+###  http://sparql.ilch.uminho.pt/minors#animal-cão
+:animal-cão rdf:type owl:NamedIndividual ,
+                 :Animal ;
+        :animal "cão"^^xsd:string .
+
+            
+###  http://sparql.ilch.uminho.pt/minors#animal-gato
+:animal-gato rdf:type owl:NamedIndividual ,
+                 :Animal ;
+        :animal "gato"^^xsd:string .
+
+            
+###  http://rdf.entigraph.pt/corpus#animal-c-o
+:animal-c-o rdf:type owl:NamedIndividual ,
+                 :Animal ;
+        :animal "cão"^^xsd:string .
+
+            

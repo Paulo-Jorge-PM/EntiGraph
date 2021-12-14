@@ -1,0 +1,25 @@
+
+###  http://sparql.ilch.uminho.pt/minors#keyword-cão
+:keyword-cão rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "cão"^^xsd:string .
+
+            
+###  http://sparql.ilch.uminho.pt/minors#keyword-gato
+:keyword-gato rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "gato"^^xsd:string .
+
+            
+###  http://sparql.ilch.uminho.pt/minors#keyword-filho
+:keyword-filho rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "filho"^^xsd:string .
+
+            
+###  http://rdf.entigraph.pt/corpus#keyword-c-o
+:keyword-c-o rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "cão"^^xsd:string .
+
+            

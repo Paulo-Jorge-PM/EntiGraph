@@ -1,0 +1,7 @@
+
+###  http://sparql.ilch.uminho.pt/minors#priority-Mulheres-12
+:priority-Mulheres-12 rdf:type owl:NamedIndividual ;
+                     :referesMinority :minority-Mulheres ;
+                     :priority 12 .
+
+        

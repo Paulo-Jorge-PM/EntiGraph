@@ -1,0 +1,7 @@
+
+###  http://sparql.ilch.uminho.pt/minors#tag-Tagteste
+:tag-Tagteste rdf:type owl:NamedIndividual ,
+                 :Tag ;
+        :tag "Tag-teste"^^xsd:string .
+
+            

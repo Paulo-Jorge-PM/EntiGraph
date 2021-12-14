@@ -1,0 +1,7 @@
+
+###  http://sparql.ilch.uminho.pt/minors#image-9988_1
+:image-9988_1 rdf:type owl:NamedIndividual ,
+                        :Image ;
+               :imageLink ""^^xsd:anyURI .
+
+           

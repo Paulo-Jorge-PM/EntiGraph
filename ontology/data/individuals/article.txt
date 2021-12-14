@@ -1,0 +1,4543 @@
+
+###  http://sparql.ilch.uminho.pt/minors#article-9988
+:article-9988 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :newspaper-Público ;
+                   :referesKeyword 
+                        :keyword-cão ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-cão ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesTag 
+                        :tag-Tagteste ;
+                   :referesMinority 
+                        :minority-Mulheres ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-António_Costa ;
+                   :referesJob 
+                        :político ;
+                   :hasPriority 
+                        :priority-Mulheres-12 ;
+                   :hasImage 
+                        :image-9988_1 ;
+           :dataPub "2019-01-15T00:00:00"^^xsd:dateTime ;
+           :link "http://www.teste.com"^^xsd:anyURI ;
+           :text """O Paulo tem um cão chamado gato em Braga, filho do António Costa e Cavaco Silva."""^^xsd:string ;
+           :fileName "9988.html"^^xsd:string ;
+           :title "O Paulo tem um cão chamado gato em Braga."^^xsd:string ;
+           :sentimentAnalysis """0"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Sol ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://rdf.entigraph.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-123
+:article-123 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-filho ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ;
+                   :referesPerson 
+                        :person-Cavaco_Silva ,
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyueKHai8KehbEj8bh4AaABAg
+:article-UgyueKHai8KehbEj8bh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzwTVHtLIICYCQtZCF4AaABAg
+:article-UgzwTVHtLIICYCQtZCF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyVwpn-0RozSx9dVLx4AaABAg
+:article-UgyVwpn-0RozSx9dVLx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyvj-LGsQteLlLVsfJ4AaABAg
+:article-Ugyvj-LGsQteLlLVsfJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-CDS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzHksnXCeA_PSU0MYR4AaABAg
+:article-UgzHksnXCeA_PSU0MYR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugzw7IaJDk8xlQggJuJ4AaABAg
+:article-Ugzw7IaJDk8xlQggJuJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy9CJVpK0NHkeB1tFZ4AaABAg
+:article-Ugy9CJVpK0NHkeB1tFZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy0aABqUPQWf51-YnR4AaABAg
+:article-Ugy0aABqUPQWf51-YnR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bebe ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyRBHgzqSLoBvK0iUN4AaABAg
+:article-UgyRBHgzqSLoBvK0iUN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vaca ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz5jdLkhrUCk2Oztop4AaABAg
+:article-Ugz5jdLkhrUCk2Oztop4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vergonha ,
+                        :keyword-homem ,
+                        :keyword-filha ;
+                   :referesCountry 
+                        :country-Portugal ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxtarpwuFNQaTfv7AV4AaABAg
+:article-UgxtarpwuFNQaTfv7AV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZQiKaFYghXXGtq694AaABAg
+:article-UgxZQiKaFYghXXGtq694AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugys2MIDWc4UoAp7XoN4AaABAg
+:article-Ugys2MIDWc4UoAp7XoN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Venezuela ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwkKwIB4t_cQQ88jZ54AaABAg
+:article-UgwkKwIB4t_cQQ88jZ54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz054yliKcauaEc2Uh4AaABAg
+:article-Ugz054yliKcauaEc2Uh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzO-wbqujbvcTpcs814AaABAg
+:article-UgzO-wbqujbvcTpcs814AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyMU_zR0uS9lAO3nWB4AaABAg
+:article-UgyMU_zR0uS9lAO3nWB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyxU2ytA7IXDdItJqF4AaABAg
+:article-UgyxU2ytA7IXDdItJqF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxYpNmIvz2gb3eajzB4AaABAg
+:article-UgxYpNmIvz2gb3eajzB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Estes ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzkoSKaO919oZZM3nh4AaABAg
+:article-UgzkoSKaO919oZZM3nh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzEhbDPUBtWMa8YLtl4AaABAg
+:article-UgzEhbDPUBtWMa8YLtl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxr4Tn-48QLJF2wT9l4AaABAg
+:article-Ugxr4Tn-48QLJF2wT9l4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgySVa-dFbP9yeoxXnB4AaABAg
+:article-UgySVa-dFbP9yeoxXnB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwRx4LxRdhotE0nRJh4AaABAg
+:article-UgwRx4LxRdhotE0nRJh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzL21u7xZcdkUG-Wh14AaABAg
+:article-UgzL21u7xZcdkUG-Wh14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwyAGZeYpMC4JECa2B4AaABAg
+:article-UgwyAGZeYpMC4JECa2B4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw0f54cXvjKd8n_ZhV4AaABAg
+:article-Ugw0f54cXvjKd8n_ZhV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzCFoigLTgvhhQ2_OF4AaABAg
+:article-UgzCFoigLTgvhhQ2_OF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxg1Rh2-CPZ4UAaKSR4AaABAg
+:article-Ugxg1Rh2-CPZ4UAaKSR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgymDTVrdUWRRh1A7ZZ4AaABAg
+:article-UgymDTVrdUWRRh1A7ZZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwPTyzErhXaezlLx5F4AaABAg
+:article-UgwPTyzErhXaezlLx5F4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzVbPYFpF70FYFCDyR4AaABAg
+:article-UgzVbPYFpF70FYFCDyR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyqDbM8LKMfeXx2gXB4AaABAg
+:article-UgyqDbM8LKMfeXx2gXB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz0td8NjKWmJLIQ6lp4AaABAg
+:article-Ugz0td8NjKWmJLIQ6lp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgysgRw4_pm4UBI4lJt4AaABAg
+:article-UgysgRw4_pm4UBI4lJt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwu4cEpml6bNlc9lWd4AaABAg
+:article-Ugwu4cEpml6bNlc9lWd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vergonha ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwWt0rp0G_ikLvptwd4AaABAg
+:article-UgwWt0rp0G_ikLvptwd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz0zqKTQSaRASKc1-x4AaABAg
+:article-Ugz0zqKTQSaRASKc1-x4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxYbjO96qvKgNG7ScF4AaABAg
+:article-UgxYbjO96qvKgNG7ScF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx-DDJs38TZ-HREllN4AaABAg
+:article-Ugx-DDJs38TZ-HREllN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy0uD6Lay9ruxQQbqp4AaABAg
+:article-Ugy0uD6Lay9ruxQQbqp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filha ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyH2jBaKOs0e6xITVd4AaABAg
+:article-UgyH2jBaKOs0e6xITVd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz-h-UrSB4LcMLxPP54AaABAg
+:article-Ugz-h-UrSB4LcMLxPP54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwA4GfAtyFooSh_dBB4AaABAg
+:article-UgwA4GfAtyFooSh_dBB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+                   :referesAnimal 
+                        :animal-pega ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxrtAdzmy_P-ehSORZ4AaABAg
+:article-UgxrtAdzmy_P-ehSORZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwWnmqCb2MQoZQieOR4AaABAg
+:article-UgwWnmqCb2MQoZQieOR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwjFDhW2TLwSmhc1554AaABAg
+:article-UgwjFDhW2TLwSmhc1554AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyGvWAUecedpZlbgVZ4AaABAg
+:article-UgyGvWAUecedpZlbgVZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyo8VGlDNwExMLwGNR4AaABAg
+:article-Ugyo8VGlDNwExMLwGNR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesAnimal 
+                        :animal-boi ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxvn5PdgKos4IJc8QV4AaABAg
+:article-Ugxvn5PdgKos4IJc8QV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxxtaWYQGH508HTwH94AaABAg
+:article-UgxxtaWYQGH508HTwH94AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bloco ;
+                   :referesPerson 
+                        :person-Betinho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxW09LEH10CyALmav54AaABAg
+:article-UgxW09LEH10CyALmav54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwB2Cc7Mznvt8SRVhx4AaABAg
+:article-UgwB2Cc7Mznvt8SRVhx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx11Xu1jpx-PKZXhCF4AaABAg
+:article-Ugx11Xu1jpx-PKZXhCF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCity 
+                        :city-Figueira_da_Foz ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzaXcwvW85Qp1xQHHN4AaABAg
+:article-UgzaXcwvW85Qp1xQHHN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy6OgbgWhJQ4R2J56B4AaABAg
+:article-Ugy6OgbgWhJQ4R2J56B4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzHY7OZMjAjAxC9nuV4AaABAg
+:article-UgzHY7OZMjAjAxC9nuV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZLSRMWelcZeJJ0wd4AaABAg
+:article-UgxZLSRMWelcZeJJ0wd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEthnicity 
+                        :ethnicity-Aka ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzYPH6VfckSXjv-88J4AaABAg
+:article-UgzYPH6VfckSXjv-88J4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy9GJjDB2O8bLpN6t54AaABAg
+:article-Ugy9GJjDB2O8bLpN6t54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-sexual ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz8PclAHe6-mkWXvsp4AaABAg
+:article-Ugz8PclAHe6-mkWXvsp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filha ,
+                        :keyword-assalto ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzLILZjKXn9TvJtC5Z4AaABAg
+:article-UgzLILZjKXn9TvJtC5Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyk4Kq4naCcIRUatMZ4AaABAg
+:article-Ugyk4Kq4naCcIRUatMZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxgP79TZLO81bKL6d54AaABAg
+:article-UgxgP79TZLO81bKL6d54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ;
+                   :referesPerson 
+                        :person-Paulo_Portas ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugzfndrn8MEllLIDnvV4AaABAg
+:article-Ugzfndrn8MEllLIDnvV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxvGkCe27R2UyENth14AaABAg
+:article-UgxvGkCe27R2UyENth14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ,
+                        :brand-Proto ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzOUQunYUPVtdt7HWx4AaABAg
+:article-UgzOUQunYUPVtdt7HWx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx_QhNMFIGA-ftCBCt4AaABAg
+:article-Ugx_QhNMFIGA-ftCBCt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx4udVNxSXhUkeqp814AaABAg
+:article-Ugx4udVNxSXhUkeqp814AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-cultura ,
+                        :keyword-social ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxPXAKQ5Xxmy4Am0zl4AaABAg
+:article-UgxPXAKQ5Xxmy4Am0zl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgykhJ4-nf6ofBchhvZ4AaABAg
+:article-UgykhJ4-nf6ofBchhvZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw_ij8cVq0YJvSfYlB4AaABAg
+:article-Ugw_ij8cVq0YJvSfYlB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxVZI81j2HzG8UZzLx4AaABAg
+:article-UgxVZI81j2HzG8UZzLx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEntity 
+                        :entity-UE ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx3rXwUOWGmYMyyBcF4AaABAg
+:article-Ugx3rXwUOWGmYMyyBcF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPoliticalParty 
+                        :politicalParty-PSD ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwyH5FE5cX_NEdWtEl4AaABAg
+:article-UgwyH5FE5cX_NEdWtEl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxO2UErXE9zRJshlwJ4AaABAg
+:article-UgxO2UErXE9zRJshlwJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-AND ,
+                        :brand-All ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxp6oQxcscOV0yw4qd4AaABAg
+:article-Ugxp6oQxcscOV0yw4qd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgybOac2S5QgFtaVnlJ4AaABAg
+:article-UgybOac2S5QgFtaVnlJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyFb3VXtPd1sTQ_3ch4AaABAg
+:article-UgyFb3VXtPd1sTQ_3ch4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesContinent 
+                        :continent-Europa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz3khZtqHFgKqyWClx4AaABAg
+:article-Ugz3khZtqHFgKqyWClx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPerson 
+                        :person-Paulo_Portas ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgziVDAu0HSwMjq0wYh4AaABAg
+:article-UgziVDAu0HSwMjq0wYh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwBU2nVVzmY9FrVIQJ4AaABAg
+:article-UgwBU2nVVzmY9FrVIQJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Coreia_do_Norte ,
+                        :country-Cuba ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Estes ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxk5hjh34YBsaXs74Z4AaABAg
+:article-Ugxk5hjh34YBsaXs74Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ,
+                        :brand-CDS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxpnmVGEovMY94KR554AaABAg
+:article-UgxpnmVGEovMY94KR554AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw5AS62K4spH_6X8zZ4AaABAg
+:article-Ugw5AS62K4spH_6X8zZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwTeAZtF8x5NXcY0Kd4AaABAg
+:article-UgwTeAZtF8x5NXcY0Kd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyOJNFrV83SuLiGtkd4AaABAg
+:article-UgyOJNFrV83SuLiGtkd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-assalto ;
+                   :referesBrand 
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzgBz8RYrCdxRNiux94AaABAg
+:article-UgzgBz8RYrCdxRNiux94AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxyrsZ9FfBlSU2BcVZ4AaABAg
+:article-UgxyrsZ9FfBlSU2BcVZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzyPsB9Ba8iRlF57UV4AaABAg
+:article-UgzyPsB9Ba8iRlF57UV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwmoDtOl315suLecJJ4AaABAg
+:article-UgwmoDtOl315suLecJJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPoliticalParty 
+                        :politicalParty-PS ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyZQp6SrCV2YLLse-N4AaABAg
+:article-UgyZQp6SrCV2YLLse-N4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-viol-ncia ,
+                        :keyword-dom-stica ,
+                        :keyword-mulher ;
+                   :referesAnimal 
+                        :animal-barata ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ,
+                        :politicalParty-PSD ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgznF3YrLA_vm6EOB0l4AaABAg
+:article-UgznF3YrLA_vm6EOB0l4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwgQUZFWH3T_I5k0MB4AaABAg
+:article-UgwgQUZFWH3T_I5k0MB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw8pMBXKe3kPIlEldx4AaABAg
+:article-Ugw8pMBXKe3kPIlEldx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzxXf_dx_4dqN1G1lF4AaABAg
+:article-UgzxXf_dx_4dqN1G1lF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyYjv-gf2ZOPVESKsp4AaABAg
+:article-UgyYjv-gf2ZOPVESKsp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+                   :referesPerson 
+                        :person-Adolfo_Mesquita_Nunes ,
+                        :person-Mariana_Mort-gua ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzLJd2COJQ3WblqX9h4AaABAg
+:article-UgzLJd2COJQ3WblqX9h4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwHKBWX8X-eI3sK_wV4AaABAg
+:article-UgwHKBWX8X-eI3sK_wV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxqh8fR-ffDOwd-sg54AaABAg
+:article-Ugxqh8fR-ffDOwd-sg54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwueAcI0Q_zEzLoPrt4AaABAg
+:article-UgwueAcI0Q_zEzLoPrt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCity 
+                        :city-Tomar ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxgmt_WVVx0hYsI-OZ4AaABAg
+:article-Ugxgmt_WVVx0hYsI-OZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw4XiFt9n4h9-hsfSN4AaABAg
+:article-Ugw4XiFt9n4h9-hsfSN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzNvqTNv8vmWZiz6C54AaABAg
+:article-UgzNvqTNv8vmWZiz6C54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzabqOSBIV1pQhgN3Z4AaABAg
+:article-UgzabqOSBIV1pQhgN3Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw354ZpliEEIjLQGTR4AaABAg
+:article-Ugw354ZpliEEIjLQGTR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesMonth 
+                        :month-Abril ;
+                   :referesBrand 
+                        :brand-SO ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxoqVo-w7GvvEZTQ3t4AaABAg
+:article-UgxoqVo-w7GvvEZTQ3t4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgztiTb6zYdGoVfg-MJ4AaABAg
+:article-UgztiTb6zYdGoVfg-MJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesSport 
+                        :sport-Futebol ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwvjzg7h5ewAzLMaEx4AaABAg
+:article-Ugwvjzg7h5ewAzLMaEx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEntity 
+                        :entity-UE ;
+                   :referesKeyword 
+                        :keyword-social ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ,
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZg-RziVPxLyNMued4AaABAg
+:article-UgxZg-RziVPxLyNMued4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Centro ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw6daFu3lOLsk6jEyh4AaABAg
+:article-Ugw6daFu3lOLsk6jEyh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Coreia_do_Norte ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyJKfq8dI0ElPaI7gB4AaABAg
+:article-UgyJKfq8dI0ElPaI7gB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwEQ-qMAz3RIKy-Z-V4AaABAg
+:article-UgwEQ-qMAz3RIKy-Z-V4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxI6-F9g4Apg3Mm2PZ4AaABAg
+:article-UgxI6-F9g4Apg3Mm2PZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwj2FlINMNjuBR6WF14AaABAg
+:article-Ugwj2FlINMNjuBR6WF14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgygYl65o4BwTHcQeOJ4AaABAg
+:article-UgygYl65o4BwTHcQeOJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-medo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxH9NaK8l2x2M0mV1N4AaABAg
+:article-UgxH9NaK8l2x2M0mV1N4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyueKHai8KehbEj8bh4AaABAg
+:article-UgyueKHai8KehbEj8bh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzwTVHtLIICYCQtZCF4AaABAg
+:article-UgzwTVHtLIICYCQtZCF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyVwpn-0RozSx9dVLx4AaABAg
+:article-UgyVwpn-0RozSx9dVLx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyvj-LGsQteLlLVsfJ4AaABAg
+:article-Ugyvj-LGsQteLlLVsfJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-CDS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzHksnXCeA_PSU0MYR4AaABAg
+:article-UgzHksnXCeA_PSU0MYR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugzw7IaJDk8xlQggJuJ4AaABAg
+:article-Ugzw7IaJDk8xlQggJuJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy9CJVpK0NHkeB1tFZ4AaABAg
+:article-Ugy9CJVpK0NHkeB1tFZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy0aABqUPQWf51-YnR4AaABAg
+:article-Ugy0aABqUPQWf51-YnR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bebe ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyRBHgzqSLoBvK0iUN4AaABAg
+:article-UgyRBHgzqSLoBvK0iUN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vaca ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz5jdLkhrUCk2Oztop4AaABAg
+:article-Ugz5jdLkhrUCk2Oztop4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vergonha ,
+                        :keyword-homem ,
+                        :keyword-filha ;
+                   :referesCountry 
+                        :country-Portugal ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxtarpwuFNQaTfv7AV4AaABAg
+:article-UgxtarpwuFNQaTfv7AV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZQiKaFYghXXGtq694AaABAg
+:article-UgxZQiKaFYghXXGtq694AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugys2MIDWc4UoAp7XoN4AaABAg
+:article-Ugys2MIDWc4UoAp7XoN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Venezuela ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwkKwIB4t_cQQ88jZ54AaABAg
+:article-UgwkKwIB4t_cQQ88jZ54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz054yliKcauaEc2Uh4AaABAg
+:article-Ugz054yliKcauaEc2Uh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzO-wbqujbvcTpcs814AaABAg
+:article-UgzO-wbqujbvcTpcs814AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyMU_zR0uS9lAO3nWB4AaABAg
+:article-UgyMU_zR0uS9lAO3nWB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyxU2ytA7IXDdItJqF4AaABAg
+:article-UgyxU2ytA7IXDdItJqF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxYpNmIvz2gb3eajzB4AaABAg
+:article-UgxYpNmIvz2gb3eajzB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Estes ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzkoSKaO919oZZM3nh4AaABAg
+:article-UgzkoSKaO919oZZM3nh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzEhbDPUBtWMa8YLtl4AaABAg
+:article-UgzEhbDPUBtWMa8YLtl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxr4Tn-48QLJF2wT9l4AaABAg
+:article-Ugxr4Tn-48QLJF2wT9l4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgySVa-dFbP9yeoxXnB4AaABAg
+:article-UgySVa-dFbP9yeoxXnB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwRx4LxRdhotE0nRJh4AaABAg
+:article-UgwRx4LxRdhotE0nRJh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzL21u7xZcdkUG-Wh14AaABAg
+:article-UgzL21u7xZcdkUG-Wh14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwyAGZeYpMC4JECa2B4AaABAg
+:article-UgwyAGZeYpMC4JECa2B4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw0f54cXvjKd8n_ZhV4AaABAg
+:article-Ugw0f54cXvjKd8n_ZhV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzCFoigLTgvhhQ2_OF4AaABAg
+:article-UgzCFoigLTgvhhQ2_OF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxg1Rh2-CPZ4UAaKSR4AaABAg
+:article-Ugxg1Rh2-CPZ4UAaKSR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgymDTVrdUWRRh1A7ZZ4AaABAg
+:article-UgymDTVrdUWRRh1A7ZZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwPTyzErhXaezlLx5F4AaABAg
+:article-UgwPTyzErhXaezlLx5F4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzVbPYFpF70FYFCDyR4AaABAg
+:article-UgzVbPYFpF70FYFCDyR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyqDbM8LKMfeXx2gXB4AaABAg
+:article-UgyqDbM8LKMfeXx2gXB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz0td8NjKWmJLIQ6lp4AaABAg
+:article-Ugz0td8NjKWmJLIQ6lp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgysgRw4_pm4UBI4lJt4AaABAg
+:article-UgysgRw4_pm4UBI4lJt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwu4cEpml6bNlc9lWd4AaABAg
+:article-Ugwu4cEpml6bNlc9lWd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vergonha ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwWt0rp0G_ikLvptwd4AaABAg
+:article-UgwWt0rp0G_ikLvptwd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz0zqKTQSaRASKc1-x4AaABAg
+:article-Ugz0zqKTQSaRASKc1-x4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxYbjO96qvKgNG7ScF4AaABAg
+:article-UgxYbjO96qvKgNG7ScF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx-DDJs38TZ-HREllN4AaABAg
+:article-Ugx-DDJs38TZ-HREllN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy0uD6Lay9ruxQQbqp4AaABAg
+:article-Ugy0uD6Lay9ruxQQbqp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filha ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyH2jBaKOs0e6xITVd4AaABAg
+:article-UgyH2jBaKOs0e6xITVd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz-h-UrSB4LcMLxPP54AaABAg
+:article-Ugz-h-UrSB4LcMLxPP54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwA4GfAtyFooSh_dBB4AaABAg
+:article-UgwA4GfAtyFooSh_dBB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+                   :referesAnimal 
+                        :animal-pega ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxrtAdzmy_P-ehSORZ4AaABAg
+:article-UgxrtAdzmy_P-ehSORZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwWnmqCb2MQoZQieOR4AaABAg
+:article-UgwWnmqCb2MQoZQieOR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwjFDhW2TLwSmhc1554AaABAg
+:article-UgwjFDhW2TLwSmhc1554AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyGvWAUecedpZlbgVZ4AaABAg
+:article-UgyGvWAUecedpZlbgVZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyo8VGlDNwExMLwGNR4AaABAg
+:article-Ugyo8VGlDNwExMLwGNR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesAnimal 
+                        :animal-boi ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxvn5PdgKos4IJc8QV4AaABAg
+:article-Ugxvn5PdgKos4IJc8QV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxxtaWYQGH508HTwH94AaABAg
+:article-UgxxtaWYQGH508HTwH94AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bloco ;
+                   :referesPerson 
+                        :person-Betinho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxW09LEH10CyALmav54AaABAg
+:article-UgxW09LEH10CyALmav54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwB2Cc7Mznvt8SRVhx4AaABAg
+:article-UgwB2Cc7Mznvt8SRVhx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx11Xu1jpx-PKZXhCF4AaABAg
+:article-Ugx11Xu1jpx-PKZXhCF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCity 
+                        :city-Figueira_da_Foz ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzaXcwvW85Qp1xQHHN4AaABAg
+:article-UgzaXcwvW85Qp1xQHHN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy6OgbgWhJQ4R2J56B4AaABAg
+:article-Ugy6OgbgWhJQ4R2J56B4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzHY7OZMjAjAxC9nuV4AaABAg
+:article-UgzHY7OZMjAjAxC9nuV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZLSRMWelcZeJJ0wd4AaABAg
+:article-UgxZLSRMWelcZeJJ0wd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEthnicity 
+                        :ethnicity-Aka ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzYPH6VfckSXjv-88J4AaABAg
+:article-UgzYPH6VfckSXjv-88J4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy9GJjDB2O8bLpN6t54AaABAg
+:article-Ugy9GJjDB2O8bLpN6t54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-sexual ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz8PclAHe6-mkWXvsp4AaABAg
+:article-Ugz8PclAHe6-mkWXvsp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filha ,
+                        :keyword-assalto ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzLILZjKXn9TvJtC5Z4AaABAg
+:article-UgzLILZjKXn9TvJtC5Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyk4Kq4naCcIRUatMZ4AaABAg
+:article-Ugyk4Kq4naCcIRUatMZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxgP79TZLO81bKL6d54AaABAg
+:article-UgxgP79TZLO81bKL6d54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ;
+                   :referesPerson 
+                        :person-Paulo_Portas ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugzfndrn8MEllLIDnvV4AaABAg
+:article-Ugzfndrn8MEllLIDnvV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxvGkCe27R2UyENth14AaABAg
+:article-UgxvGkCe27R2UyENth14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ,
+                        :brand-Proto ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzOUQunYUPVtdt7HWx4AaABAg
+:article-UgzOUQunYUPVtdt7HWx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx_QhNMFIGA-ftCBCt4AaABAg
+:article-Ugx_QhNMFIGA-ftCBCt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx4udVNxSXhUkeqp814AaABAg
+:article-Ugx4udVNxSXhUkeqp814AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-cultura ,
+                        :keyword-social ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxPXAKQ5Xxmy4Am0zl4AaABAg
+:article-UgxPXAKQ5Xxmy4Am0zl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgykhJ4-nf6ofBchhvZ4AaABAg
+:article-UgykhJ4-nf6ofBchhvZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw_ij8cVq0YJvSfYlB4AaABAg
+:article-Ugw_ij8cVq0YJvSfYlB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxVZI81j2HzG8UZzLx4AaABAg
+:article-UgxVZI81j2HzG8UZzLx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEntity 
+                        :entity-UE ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx3rXwUOWGmYMyyBcF4AaABAg
+:article-Ugx3rXwUOWGmYMyyBcF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPoliticalParty 
+                        :politicalParty-PSD ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwyH5FE5cX_NEdWtEl4AaABAg
+:article-UgwyH5FE5cX_NEdWtEl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxO2UErXE9zRJshlwJ4AaABAg
+:article-UgxO2UErXE9zRJshlwJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-AND ,
+                        :brand-All ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxp6oQxcscOV0yw4qd4AaABAg
+:article-Ugxp6oQxcscOV0yw4qd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgybOac2S5QgFtaVnlJ4AaABAg
+:article-UgybOac2S5QgFtaVnlJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyFb3VXtPd1sTQ_3ch4AaABAg
+:article-UgyFb3VXtPd1sTQ_3ch4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesContinent 
+                        :continent-Europa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz3khZtqHFgKqyWClx4AaABAg
+:article-Ugz3khZtqHFgKqyWClx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPerson 
+                        :person-Paulo_Portas ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgziVDAu0HSwMjq0wYh4AaABAg
+:article-UgziVDAu0HSwMjq0wYh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwBU2nVVzmY9FrVIQJ4AaABAg
+:article-UgwBU2nVVzmY9FrVIQJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Coreia_do_Norte ,
+                        :country-Cuba ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Estes ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxk5hjh34YBsaXs74Z4AaABAg
+:article-Ugxk5hjh34YBsaXs74Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ,
+                        :brand-CDS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxpnmVGEovMY94KR554AaABAg
+:article-UgxpnmVGEovMY94KR554AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw5AS62K4spH_6X8zZ4AaABAg
+:article-Ugw5AS62K4spH_6X8zZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwTeAZtF8x5NXcY0Kd4AaABAg
+:article-UgwTeAZtF8x5NXcY0Kd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyOJNFrV83SuLiGtkd4AaABAg
+:article-UgyOJNFrV83SuLiGtkd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-assalto ;
+                   :referesBrand 
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzgBz8RYrCdxRNiux94AaABAg
+:article-UgzgBz8RYrCdxRNiux94AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxyrsZ9FfBlSU2BcVZ4AaABAg
+:article-UgxyrsZ9FfBlSU2BcVZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzyPsB9Ba8iRlF57UV4AaABAg
+:article-UgzyPsB9Ba8iRlF57UV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwmoDtOl315suLecJJ4AaABAg
+:article-UgwmoDtOl315suLecJJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPoliticalParty 
+                        :politicalParty-PS ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyZQp6SrCV2YLLse-N4AaABAg
+:article-UgyZQp6SrCV2YLLse-N4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-viol-ncia ,
+                        :keyword-dom-stica ,
+                        :keyword-mulher ;
+                   :referesAnimal 
+                        :animal-barata ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ,
+                        :politicalParty-PSD ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgznF3YrLA_vm6EOB0l4AaABAg
+:article-UgznF3YrLA_vm6EOB0l4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwgQUZFWH3T_I5k0MB4AaABAg
+:article-UgwgQUZFWH3T_I5k0MB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw8pMBXKe3kPIlEldx4AaABAg
+:article-Ugw8pMBXKe3kPIlEldx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzxXf_dx_4dqN1G1lF4AaABAg
+:article-UgzxXf_dx_4dqN1G1lF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyYjv-gf2ZOPVESKsp4AaABAg
+:article-UgyYjv-gf2ZOPVESKsp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+                   :referesPerson 
+                        :person-Adolfo_Mesquita_Nunes ,
+                        :person-Mariana_Mort-gua ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzLJd2COJQ3WblqX9h4AaABAg
+:article-UgzLJd2COJQ3WblqX9h4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwHKBWX8X-eI3sK_wV4AaABAg
+:article-UgwHKBWX8X-eI3sK_wV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxqh8fR-ffDOwd-sg54AaABAg
+:article-Ugxqh8fR-ffDOwd-sg54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwueAcI0Q_zEzLoPrt4AaABAg
+:article-UgwueAcI0Q_zEzLoPrt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCity 
+                        :city-Tomar ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxgmt_WVVx0hYsI-OZ4AaABAg
+:article-Ugxgmt_WVVx0hYsI-OZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw4XiFt9n4h9-hsfSN4AaABAg
+:article-Ugw4XiFt9n4h9-hsfSN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzNvqTNv8vmWZiz6C54AaABAg
+:article-UgzNvqTNv8vmWZiz6C54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzabqOSBIV1pQhgN3Z4AaABAg
+:article-UgzabqOSBIV1pQhgN3Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw354ZpliEEIjLQGTR4AaABAg
+:article-Ugw354ZpliEEIjLQGTR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesMonth 
+                        :month-Abril ;
+                   :referesBrand 
+                        :brand-SO ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxoqVo-w7GvvEZTQ3t4AaABAg
+:article-UgxoqVo-w7GvvEZTQ3t4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgztiTb6zYdGoVfg-MJ4AaABAg
+:article-UgztiTb6zYdGoVfg-MJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesSport 
+                        :sport-Futebol ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwvjzg7h5ewAzLMaEx4AaABAg
+:article-Ugwvjzg7h5ewAzLMaEx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEntity 
+                        :entity-UE ;
+                   :referesKeyword 
+                        :keyword-social ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ,
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZg-RziVPxLyNMued4AaABAg
+:article-UgxZg-RziVPxLyNMued4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Centro ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw6daFu3lOLsk6jEyh4AaABAg
+:article-Ugw6daFu3lOLsk6jEyh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Coreia_do_Norte ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyJKfq8dI0ElPaI7gB4AaABAg
+:article-UgyJKfq8dI0ElPaI7gB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwEQ-qMAz3RIKy-Z-V4AaABAg
+:article-UgwEQ-qMAz3RIKy-Z-V4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxI6-F9g4Apg3Mm2PZ4AaABAg
+:article-UgxI6-F9g4Apg3Mm2PZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwj2FlINMNjuBR6WF14AaABAg
+:article-Ugwj2FlINMNjuBR6WF14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgygYl65o4BwTHcQeOJ4AaABAg
+:article-UgygYl65o4BwTHcQeOJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-medo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxH9NaK8l2x2M0mV1N4AaABAg
+:article-UgxH9NaK8l2x2M0mV1N4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyueKHai8KehbEj8bh4AaABAg
+:article-UgyueKHai8KehbEj8bh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzwTVHtLIICYCQtZCF4AaABAg
+:article-UgzwTVHtLIICYCQtZCF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyVwpn-0RozSx9dVLx4AaABAg
+:article-UgyVwpn-0RozSx9dVLx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyvj-LGsQteLlLVsfJ4AaABAg
+:article-Ugyvj-LGsQteLlLVsfJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-CDS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzHksnXCeA_PSU0MYR4AaABAg
+:article-UgzHksnXCeA_PSU0MYR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugzw7IaJDk8xlQggJuJ4AaABAg
+:article-Ugzw7IaJDk8xlQggJuJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy9CJVpK0NHkeB1tFZ4AaABAg
+:article-Ugy9CJVpK0NHkeB1tFZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy0aABqUPQWf51-YnR4AaABAg
+:article-Ugy0aABqUPQWf51-YnR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bebe ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyRBHgzqSLoBvK0iUN4AaABAg
+:article-UgyRBHgzqSLoBvK0iUN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vaca ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz5jdLkhrUCk2Oztop4AaABAg
+:article-Ugz5jdLkhrUCk2Oztop4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vergonha ,
+                        :keyword-homem ,
+                        :keyword-filha ;
+                   :referesCountry 
+                        :country-Portugal ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxtarpwuFNQaTfv7AV4AaABAg
+:article-UgxtarpwuFNQaTfv7AV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZQiKaFYghXXGtq694AaABAg
+:article-UgxZQiKaFYghXXGtq694AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugys2MIDWc4UoAp7XoN4AaABAg
+:article-Ugys2MIDWc4UoAp7XoN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Venezuela ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwkKwIB4t_cQQ88jZ54AaABAg
+:article-UgwkKwIB4t_cQQ88jZ54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz054yliKcauaEc2Uh4AaABAg
+:article-Ugz054yliKcauaEc2Uh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzO-wbqujbvcTpcs814AaABAg
+:article-UgzO-wbqujbvcTpcs814AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyMU_zR0uS9lAO3nWB4AaABAg
+:article-UgyMU_zR0uS9lAO3nWB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyxU2ytA7IXDdItJqF4AaABAg
+:article-UgyxU2ytA7IXDdItJqF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxYpNmIvz2gb3eajzB4AaABAg
+:article-UgxYpNmIvz2gb3eajzB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Estes ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzkoSKaO919oZZM3nh4AaABAg
+:article-UgzkoSKaO919oZZM3nh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzEhbDPUBtWMa8YLtl4AaABAg
+:article-UgzEhbDPUBtWMa8YLtl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxr4Tn-48QLJF2wT9l4AaABAg
+:article-Ugxr4Tn-48QLJF2wT9l4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgySVa-dFbP9yeoxXnB4AaABAg
+:article-UgySVa-dFbP9yeoxXnB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwRx4LxRdhotE0nRJh4AaABAg
+:article-UgwRx4LxRdhotE0nRJh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzL21u7xZcdkUG-Wh14AaABAg
+:article-UgzL21u7xZcdkUG-Wh14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwyAGZeYpMC4JECa2B4AaABAg
+:article-UgwyAGZeYpMC4JECa2B4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw0f54cXvjKd8n_ZhV4AaABAg
+:article-Ugw0f54cXvjKd8n_ZhV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzCFoigLTgvhhQ2_OF4AaABAg
+:article-UgzCFoigLTgvhhQ2_OF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxg1Rh2-CPZ4UAaKSR4AaABAg
+:article-Ugxg1Rh2-CPZ4UAaKSR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgymDTVrdUWRRh1A7ZZ4AaABAg
+:article-UgymDTVrdUWRRh1A7ZZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwPTyzErhXaezlLx5F4AaABAg
+:article-UgwPTyzErhXaezlLx5F4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzVbPYFpF70FYFCDyR4AaABAg
+:article-UgzVbPYFpF70FYFCDyR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyqDbM8LKMfeXx2gXB4AaABAg
+:article-UgyqDbM8LKMfeXx2gXB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz0td8NjKWmJLIQ6lp4AaABAg
+:article-Ugz0td8NjKWmJLIQ6lp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgysgRw4_pm4UBI4lJt4AaABAg
+:article-UgysgRw4_pm4UBI4lJt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwu4cEpml6bNlc9lWd4AaABAg
+:article-Ugwu4cEpml6bNlc9lWd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vergonha ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwWt0rp0G_ikLvptwd4AaABAg
+:article-UgwWt0rp0G_ikLvptwd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz0zqKTQSaRASKc1-x4AaABAg
+:article-Ugz0zqKTQSaRASKc1-x4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxYbjO96qvKgNG7ScF4AaABAg
+:article-UgxYbjO96qvKgNG7ScF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx-DDJs38TZ-HREllN4AaABAg
+:article-Ugx-DDJs38TZ-HREllN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy0uD6Lay9ruxQQbqp4AaABAg
+:article-Ugy0uD6Lay9ruxQQbqp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filha ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyH2jBaKOs0e6xITVd4AaABAg
+:article-UgyH2jBaKOs0e6xITVd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz-h-UrSB4LcMLxPP54AaABAg
+:article-Ugz-h-UrSB4LcMLxPP54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwA4GfAtyFooSh_dBB4AaABAg
+:article-UgwA4GfAtyFooSh_dBB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+                   :referesAnimal 
+                        :animal-pega ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxrtAdzmy_P-ehSORZ4AaABAg
+:article-UgxrtAdzmy_P-ehSORZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwWnmqCb2MQoZQieOR4AaABAg
+:article-UgwWnmqCb2MQoZQieOR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwjFDhW2TLwSmhc1554AaABAg
+:article-UgwjFDhW2TLwSmhc1554AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyGvWAUecedpZlbgVZ4AaABAg
+:article-UgyGvWAUecedpZlbgVZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyo8VGlDNwExMLwGNR4AaABAg
+:article-Ugyo8VGlDNwExMLwGNR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesAnimal 
+                        :animal-boi ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxvn5PdgKos4IJc8QV4AaABAg
+:article-Ugxvn5PdgKos4IJc8QV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxxtaWYQGH508HTwH94AaABAg
+:article-UgxxtaWYQGH508HTwH94AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bloco ;
+                   :referesPerson 
+                        :person-Betinho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxW09LEH10CyALmav54AaABAg
+:article-UgxW09LEH10CyALmav54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwB2Cc7Mznvt8SRVhx4AaABAg
+:article-UgwB2Cc7Mznvt8SRVhx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx11Xu1jpx-PKZXhCF4AaABAg
+:article-Ugx11Xu1jpx-PKZXhCF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCity 
+                        :city-Figueira_da_Foz ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzaXcwvW85Qp1xQHHN4AaABAg
+:article-UgzaXcwvW85Qp1xQHHN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy6OgbgWhJQ4R2J56B4AaABAg
+:article-Ugy6OgbgWhJQ4R2J56B4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzHY7OZMjAjAxC9nuV4AaABAg
+:article-UgzHY7OZMjAjAxC9nuV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZLSRMWelcZeJJ0wd4AaABAg
+:article-UgxZLSRMWelcZeJJ0wd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEthnicity 
+                        :ethnicity-Aka ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzYPH6VfckSXjv-88J4AaABAg
+:article-UgzYPH6VfckSXjv-88J4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy9GJjDB2O8bLpN6t54AaABAg
+:article-Ugy9GJjDB2O8bLpN6t54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-sexual ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz8PclAHe6-mkWXvsp4AaABAg
+:article-Ugz8PclAHe6-mkWXvsp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filha ,
+                        :keyword-assalto ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzLILZjKXn9TvJtC5Z4AaABAg
+:article-UgzLILZjKXn9TvJtC5Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyk4Kq4naCcIRUatMZ4AaABAg
+:article-Ugyk4Kq4naCcIRUatMZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxgP79TZLO81bKL6d54AaABAg
+:article-UgxgP79TZLO81bKL6d54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ;
+                   :referesPerson 
+                        :person-Paulo_Portas ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugzfndrn8MEllLIDnvV4AaABAg
+:article-Ugzfndrn8MEllLIDnvV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxvGkCe27R2UyENth14AaABAg
+:article-UgxvGkCe27R2UyENth14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ,
+                        :brand-Proto ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzOUQunYUPVtdt7HWx4AaABAg
+:article-UgzOUQunYUPVtdt7HWx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx_QhNMFIGA-ftCBCt4AaABAg
+:article-Ugx_QhNMFIGA-ftCBCt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx4udVNxSXhUkeqp814AaABAg
+:article-Ugx4udVNxSXhUkeqp814AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-cultura ,
+                        :keyword-social ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxPXAKQ5Xxmy4Am0zl4AaABAg
+:article-UgxPXAKQ5Xxmy4Am0zl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgykhJ4-nf6ofBchhvZ4AaABAg
+:article-UgykhJ4-nf6ofBchhvZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw_ij8cVq0YJvSfYlB4AaABAg
+:article-Ugw_ij8cVq0YJvSfYlB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxVZI81j2HzG8UZzLx4AaABAg
+:article-UgxVZI81j2HzG8UZzLx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEntity 
+                        :entity-UE ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx3rXwUOWGmYMyyBcF4AaABAg
+:article-Ugx3rXwUOWGmYMyyBcF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPoliticalParty 
+                        :politicalParty-PSD ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwyH5FE5cX_NEdWtEl4AaABAg
+:article-UgwyH5FE5cX_NEdWtEl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxO2UErXE9zRJshlwJ4AaABAg
+:article-UgxO2UErXE9zRJshlwJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-AND ,
+                        :brand-All ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxp6oQxcscOV0yw4qd4AaABAg
+:article-Ugxp6oQxcscOV0yw4qd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgybOac2S5QgFtaVnlJ4AaABAg
+:article-UgybOac2S5QgFtaVnlJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyFb3VXtPd1sTQ_3ch4AaABAg
+:article-UgyFb3VXtPd1sTQ_3ch4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesContinent 
+                        :continent-Europa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz3khZtqHFgKqyWClx4AaABAg
+:article-Ugz3khZtqHFgKqyWClx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPerson 
+                        :person-Paulo_Portas ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgziVDAu0HSwMjq0wYh4AaABAg
+:article-UgziVDAu0HSwMjq0wYh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwBU2nVVzmY9FrVIQJ4AaABAg
+:article-UgwBU2nVVzmY9FrVIQJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Coreia_do_Norte ,
+                        :country-Cuba ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Estes ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxk5hjh34YBsaXs74Z4AaABAg
+:article-Ugxk5hjh34YBsaXs74Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ,
+                        :brand-CDS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxpnmVGEovMY94KR554AaABAg
+:article-UgxpnmVGEovMY94KR554AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw5AS62K4spH_6X8zZ4AaABAg
+:article-Ugw5AS62K4spH_6X8zZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwTeAZtF8x5NXcY0Kd4AaABAg
+:article-UgwTeAZtF8x5NXcY0Kd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyOJNFrV83SuLiGtkd4AaABAg
+:article-UgyOJNFrV83SuLiGtkd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-assalto ;
+                   :referesBrand 
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzgBz8RYrCdxRNiux94AaABAg
+:article-UgzgBz8RYrCdxRNiux94AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxyrsZ9FfBlSU2BcVZ4AaABAg
+:article-UgxyrsZ9FfBlSU2BcVZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzyPsB9Ba8iRlF57UV4AaABAg
+:article-UgzyPsB9Ba8iRlF57UV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwmoDtOl315suLecJJ4AaABAg
+:article-UgwmoDtOl315suLecJJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPoliticalParty 
+                        :politicalParty-PS ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyZQp6SrCV2YLLse-N4AaABAg
+:article-UgyZQp6SrCV2YLLse-N4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-viol-ncia ,
+                        :keyword-dom-stica ,
+                        :keyword-mulher ;
+                   :referesAnimal 
+                        :animal-barata ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ,
+                        :politicalParty-PSD ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgznF3YrLA_vm6EOB0l4AaABAg
+:article-UgznF3YrLA_vm6EOB0l4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwgQUZFWH3T_I5k0MB4AaABAg
+:article-UgwgQUZFWH3T_I5k0MB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw8pMBXKe3kPIlEldx4AaABAg
+:article-Ugw8pMBXKe3kPIlEldx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzxXf_dx_4dqN1G1lF4AaABAg
+:article-UgzxXf_dx_4dqN1G1lF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyYjv-gf2ZOPVESKsp4AaABAg
+:article-UgyYjv-gf2ZOPVESKsp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+                   :referesPerson 
+                        :person-Adolfo_Mesquita_Nunes ,
+                        :person-Mariana_Mort-gua ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzLJd2COJQ3WblqX9h4AaABAg
+:article-UgzLJd2COJQ3WblqX9h4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwHKBWX8X-eI3sK_wV4AaABAg
+:article-UgwHKBWX8X-eI3sK_wV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxqh8fR-ffDOwd-sg54AaABAg
+:article-Ugxqh8fR-ffDOwd-sg54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwueAcI0Q_zEzLoPrt4AaABAg
+:article-UgwueAcI0Q_zEzLoPrt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCity 
+                        :city-Tomar ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxgmt_WVVx0hYsI-OZ4AaABAg
+:article-Ugxgmt_WVVx0hYsI-OZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw4XiFt9n4h9-hsfSN4AaABAg
+:article-Ugw4XiFt9n4h9-hsfSN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzNvqTNv8vmWZiz6C54AaABAg
+:article-UgzNvqTNv8vmWZiz6C54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzabqOSBIV1pQhgN3Z4AaABAg
+:article-UgzabqOSBIV1pQhgN3Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw354ZpliEEIjLQGTR4AaABAg
+:article-Ugw354ZpliEEIjLQGTR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesMonth 
+                        :month-Abril ;
+                   :referesBrand 
+                        :brand-SO ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxoqVo-w7GvvEZTQ3t4AaABAg
+:article-UgxoqVo-w7GvvEZTQ3t4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgztiTb6zYdGoVfg-MJ4AaABAg
+:article-UgztiTb6zYdGoVfg-MJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesSport 
+                        :sport-Futebol ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwvjzg7h5ewAzLMaEx4AaABAg
+:article-Ugwvjzg7h5ewAzLMaEx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEntity 
+                        :entity-UE ;
+                   :referesKeyword 
+                        :keyword-social ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ,
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZg-RziVPxLyNMued4AaABAg
+:article-UgxZg-RziVPxLyNMued4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Centro ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw6daFu3lOLsk6jEyh4AaABAg
+:article-Ugw6daFu3lOLsk6jEyh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Coreia_do_Norte ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyJKfq8dI0ElPaI7gB4AaABAg
+:article-UgyJKfq8dI0ElPaI7gB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwEQ-qMAz3RIKy-Z-V4AaABAg
+:article-UgwEQ-qMAz3RIKy-Z-V4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxI6-F9g4Apg3Mm2PZ4AaABAg
+:article-UgxI6-F9g4Apg3Mm2PZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwj2FlINMNjuBR6WF14AaABAg
+:article-Ugwj2FlINMNjuBR6WF14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgygYl65o4BwTHcQeOJ4AaABAg
+:article-UgygYl65o4BwTHcQeOJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-medo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxH9NaK8l2x2M0mV1N4AaABAg
+:article-UgxH9NaK8l2x2M0mV1N4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyueKHai8KehbEj8bh4AaABAg
+:article-UgyueKHai8KehbEj8bh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzwTVHtLIICYCQtZCF4AaABAg
+:article-UgzwTVHtLIICYCQtZCF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyVwpn-0RozSx9dVLx4AaABAg
+:article-UgyVwpn-0RozSx9dVLx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyvj-LGsQteLlLVsfJ4AaABAg
+:article-Ugyvj-LGsQteLlLVsfJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-CDS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzHksnXCeA_PSU0MYR4AaABAg
+:article-UgzHksnXCeA_PSU0MYR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugzw7IaJDk8xlQggJuJ4AaABAg
+:article-Ugzw7IaJDk8xlQggJuJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy9CJVpK0NHkeB1tFZ4AaABAg
+:article-Ugy9CJVpK0NHkeB1tFZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy0aABqUPQWf51-YnR4AaABAg
+:article-Ugy0aABqUPQWf51-YnR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bebe ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyRBHgzqSLoBvK0iUN4AaABAg
+:article-UgyRBHgzqSLoBvK0iUN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vaca ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz5jdLkhrUCk2Oztop4AaABAg
+:article-Ugz5jdLkhrUCk2Oztop4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vergonha ,
+                        :keyword-homem ,
+                        :keyword-filha ;
+                   :referesCountry 
+                        :country-Portugal ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxtarpwuFNQaTfv7AV4AaABAg
+:article-UgxtarpwuFNQaTfv7AV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZQiKaFYghXXGtq694AaABAg
+:article-UgxZQiKaFYghXXGtq694AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugys2MIDWc4UoAp7XoN4AaABAg
+:article-Ugys2MIDWc4UoAp7XoN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Venezuela ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwkKwIB4t_cQQ88jZ54AaABAg
+:article-UgwkKwIB4t_cQQ88jZ54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz054yliKcauaEc2Uh4AaABAg
+:article-Ugz054yliKcauaEc2Uh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzO-wbqujbvcTpcs814AaABAg
+:article-UgzO-wbqujbvcTpcs814AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyMU_zR0uS9lAO3nWB4AaABAg
+:article-UgyMU_zR0uS9lAO3nWB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyxU2ytA7IXDdItJqF4AaABAg
+:article-UgyxU2ytA7IXDdItJqF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxYpNmIvz2gb3eajzB4AaABAg
+:article-UgxYpNmIvz2gb3eajzB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Estes ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzkoSKaO919oZZM3nh4AaABAg
+:article-UgzkoSKaO919oZZM3nh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzEhbDPUBtWMa8YLtl4AaABAg
+:article-UgzEhbDPUBtWMa8YLtl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxr4Tn-48QLJF2wT9l4AaABAg
+:article-Ugxr4Tn-48QLJF2wT9l4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgySVa-dFbP9yeoxXnB4AaABAg
+:article-UgySVa-dFbP9yeoxXnB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwRx4LxRdhotE0nRJh4AaABAg
+:article-UgwRx4LxRdhotE0nRJh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzL21u7xZcdkUG-Wh14AaABAg
+:article-UgzL21u7xZcdkUG-Wh14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwyAGZeYpMC4JECa2B4AaABAg
+:article-UgwyAGZeYpMC4JECa2B4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw0f54cXvjKd8n_ZhV4AaABAg
+:article-Ugw0f54cXvjKd8n_ZhV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzCFoigLTgvhhQ2_OF4AaABAg
+:article-UgzCFoigLTgvhhQ2_OF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxg1Rh2-CPZ4UAaKSR4AaABAg
+:article-Ugxg1Rh2-CPZ4UAaKSR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgymDTVrdUWRRh1A7ZZ4AaABAg
+:article-UgymDTVrdUWRRh1A7ZZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwPTyzErhXaezlLx5F4AaABAg
+:article-UgwPTyzErhXaezlLx5F4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzVbPYFpF70FYFCDyR4AaABAg
+:article-UgzVbPYFpF70FYFCDyR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyqDbM8LKMfeXx2gXB4AaABAg
+:article-UgyqDbM8LKMfeXx2gXB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz0td8NjKWmJLIQ6lp4AaABAg
+:article-Ugz0td8NjKWmJLIQ6lp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgysgRw4_pm4UBI4lJt4AaABAg
+:article-UgysgRw4_pm4UBI4lJt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwu4cEpml6bNlc9lWd4AaABAg
+:article-Ugwu4cEpml6bNlc9lWd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-vergonha ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwWt0rp0G_ikLvptwd4AaABAg
+:article-UgwWt0rp0G_ikLvptwd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz0zqKTQSaRASKc1-x4AaABAg
+:article-Ugz0zqKTQSaRASKc1-x4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxYbjO96qvKgNG7ScF4AaABAg
+:article-UgxYbjO96qvKgNG7ScF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx-DDJs38TZ-HREllN4AaABAg
+:article-Ugx-DDJs38TZ-HREllN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy0uD6Lay9ruxQQbqp4AaABAg
+:article-Ugy0uD6Lay9ruxQQbqp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filha ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyH2jBaKOs0e6xITVd4AaABAg
+:article-UgyH2jBaKOs0e6xITVd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz-h-UrSB4LcMLxPP54AaABAg
+:article-Ugz-h-UrSB4LcMLxPP54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwA4GfAtyFooSh_dBB4AaABAg
+:article-UgwA4GfAtyFooSh_dBB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+                   :referesAnimal 
+                        :animal-pega ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxrtAdzmy_P-ehSORZ4AaABAg
+:article-UgxrtAdzmy_P-ehSORZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwWnmqCb2MQoZQieOR4AaABAg
+:article-UgwWnmqCb2MQoZQieOR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwjFDhW2TLwSmhc1554AaABAg
+:article-UgwjFDhW2TLwSmhc1554AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyGvWAUecedpZlbgVZ4AaABAg
+:article-UgyGvWAUecedpZlbgVZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyo8VGlDNwExMLwGNR4AaABAg
+:article-Ugyo8VGlDNwExMLwGNR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesAnimal 
+                        :animal-boi ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxvn5PdgKos4IJc8QV4AaABAg
+:article-Ugxvn5PdgKos4IJc8QV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-gay ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-NoJo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxxtaWYQGH508HTwH94AaABAg
+:article-UgxxtaWYQGH508HTwH94AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Bloco ;
+                   :referesPerson 
+                        :person-Betinho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxW09LEH10CyALmav54AaABAg
+:article-UgxW09LEH10CyALmav54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwB2Cc7Mznvt8SRVhx4AaABAg
+:article-UgwB2Cc7Mznvt8SRVhx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx11Xu1jpx-PKZXhCF4AaABAg
+:article-Ugx11Xu1jpx-PKZXhCF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCity 
+                        :city-Figueira_da_Foz ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzaXcwvW85Qp1xQHHN4AaABAg
+:article-UgzaXcwvW85Qp1xQHHN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy6OgbgWhJQ4R2J56B4AaABAg
+:article-Ugy6OgbgWhJQ4R2J56B4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzHY7OZMjAjAxC9nuV4AaABAg
+:article-UgzHY7OZMjAjAxC9nuV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZLSRMWelcZeJJ0wd4AaABAg
+:article-UgxZLSRMWelcZeJJ0wd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEthnicity 
+                        :ethnicity-Aka ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzYPH6VfckSXjv-88J4AaABAg
+:article-UgzYPH6VfckSXjv-88J4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugy9GJjDB2O8bLpN6t54AaABAg
+:article-Ugy9GJjDB2O8bLpN6t54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-sexual ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz8PclAHe6-mkWXvsp4AaABAg
+:article-Ugz8PclAHe6-mkWXvsp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filha ,
+                        :keyword-assalto ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzLILZjKXn9TvJtC5Z4AaABAg
+:article-UgzLILZjKXn9TvJtC5Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugyk4Kq4naCcIRUatMZ4AaABAg
+:article-Ugyk4Kq4naCcIRUatMZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxgP79TZLO81bKL6d54AaABAg
+:article-UgxgP79TZLO81bKL6d54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ;
+                   :referesPerson 
+                        :person-Paulo_Portas ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugzfndrn8MEllLIDnvV4AaABAg
+:article-Ugzfndrn8MEllLIDnvV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxvGkCe27R2UyENth14AaABAg
+:article-UgxvGkCe27R2UyENth14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ,
+                        :brand-Proto ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzOUQunYUPVtdt7HWx4AaABAg
+:article-UgzOUQunYUPVtdt7HWx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx_QhNMFIGA-ftCBCt4AaABAg
+:article-Ugx_QhNMFIGA-ftCBCt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx4udVNxSXhUkeqp814AaABAg
+:article-Ugx4udVNxSXhUkeqp814AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-cultura ,
+                        :keyword-social ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxPXAKQ5Xxmy4Am0zl4AaABAg
+:article-UgxPXAKQ5Xxmy4Am0zl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgykhJ4-nf6ofBchhvZ4AaABAg
+:article-UgykhJ4-nf6ofBchhvZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw_ij8cVq0YJvSfYlB4AaABAg
+:article-Ugw_ij8cVq0YJvSfYlB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxVZI81j2HzG8UZzLx4AaABAg
+:article-UgxVZI81j2HzG8UZzLx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEntity 
+                        :entity-UE ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugx3rXwUOWGmYMyyBcF4AaABAg
+:article-Ugx3rXwUOWGmYMyyBcF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPoliticalParty 
+                        :politicalParty-PSD ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwyH5FE5cX_NEdWtEl4AaABAg
+:article-UgwyH5FE5cX_NEdWtEl4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxO2UErXE9zRJshlwJ4AaABAg
+:article-UgxO2UErXE9zRJshlwJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-AND ,
+                        :brand-All ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxp6oQxcscOV0yw4qd4AaABAg
+:article-Ugxp6oQxcscOV0yw4qd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgybOac2S5QgFtaVnlJ4AaABAg
+:article-UgybOac2S5QgFtaVnlJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyFb3VXtPd1sTQ_3ch4AaABAg
+:article-UgyFb3VXtPd1sTQ_3ch4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesContinent 
+                        :continent-Europa ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugz3khZtqHFgKqyWClx4AaABAg
+:article-Ugz3khZtqHFgKqyWClx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPerson 
+                        :person-Paulo_Portas ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgziVDAu0HSwMjq0wYh4AaABAg
+:article-UgziVDAu0HSwMjq0wYh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwBU2nVVzmY9FrVIQJ4AaABAg
+:article-UgwBU2nVVzmY9FrVIQJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Coreia_do_Norte ,
+                        :country-Cuba ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-Estes ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxk5hjh34YBsaXs74Z4AaABAg
+:article-Ugxk5hjh34YBsaXs74Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ,
+                        :brand-CDS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxpnmVGEovMY94KR554AaABAg
+:article-UgxpnmVGEovMY94KR554AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw5AS62K4spH_6X8zZ4AaABAg
+:article-Ugw5AS62K4spH_6X8zZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwTeAZtF8x5NXcY0Kd4AaABAg
+:article-UgwTeAZtF8x5NXcY0Kd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyOJNFrV83SuLiGtkd4AaABAg
+:article-UgyOJNFrV83SuLiGtkd4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-assalto ;
+                   :referesBrand 
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzgBz8RYrCdxRNiux94AaABAg
+:article-UgzgBz8RYrCdxRNiux94AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxyrsZ9FfBlSU2BcVZ4AaABAg
+:article-UgxyrsZ9FfBlSU2BcVZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-mulher ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzyPsB9Ba8iRlF57UV4AaABAg
+:article-UgzyPsB9Ba8iRlF57UV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwmoDtOl315suLecJJ4AaABAg
+:article-UgwmoDtOl315suLecJJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesPoliticalParty 
+                        :politicalParty-PS ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyZQp6SrCV2YLLse-N4AaABAg
+:article-UgyZQp6SrCV2YLLse-N4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-viol-ncia ,
+                        :keyword-dom-stica ,
+                        :keyword-mulher ;
+                   :referesAnimal 
+                        :animal-barata ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ,
+                        :politicalParty-PSD ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgznF3YrLA_vm6EOB0l4AaABAg
+:article-UgznF3YrLA_vm6EOB0l4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwgQUZFWH3T_I5k0MB4AaABAg
+:article-UgwgQUZFWH3T_I5k0MB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw8pMBXKe3kPIlEldx4AaABAg
+:article-Ugw8pMBXKe3kPIlEldx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzxXf_dx_4dqN1G1lF4AaABAg
+:article-UgzxXf_dx_4dqN1G1lF4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyYjv-gf2ZOPVESKsp4AaABAg
+:article-UgyYjv-gf2ZOPVESKsp4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+                   :referesPerson 
+                        :person-Adolfo_Mesquita_Nunes ,
+                        :person-Mariana_Mort-gua ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzLJd2COJQ3WblqX9h4AaABAg
+:article-UgzLJd2COJQ3WblqX9h4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwHKBWX8X-eI3sK_wV4AaABAg
+:article-UgwHKBWX8X-eI3sK_wV4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxqh8fR-ffDOwd-sg54AaABAg
+:article-Ugxqh8fR-ffDOwd-sg54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-rapariga ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwueAcI0Q_zEzLoPrt4AaABAg
+:article-UgwueAcI0Q_zEzLoPrt4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCity 
+                        :city-Tomar ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugxgmt_WVVx0hYsI-OZ4AaABAg
+:article-Ugxgmt_WVVx0hYsI-OZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ,
+                        :brand-NOS ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw4XiFt9n4h9-hsfSN4AaABAg
+:article-Ugw4XiFt9n4h9-hsfSN4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzNvqTNv8vmWZiz6C54AaABAg
+:article-UgzNvqTNv8vmWZiz6C54AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-filho ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgzabqOSBIV1pQhgN3Z4AaABAg
+:article-UgzabqOSBIV1pQhgN3Z4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw354ZpliEEIjLQGTR4AaABAg
+:article-Ugw354ZpliEEIjLQGTR4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesMonth 
+                        :month-Abril ;
+                   :referesBrand 
+                        :brand-SO ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxoqVo-w7GvvEZTQ3t4AaABAg
+:article-UgxoqVo-w7GvvEZTQ3t4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgztiTb6zYdGoVfg-MJ4AaABAg
+:article-UgztiTb6zYdGoVfg-MJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesSport 
+                        :sport-Futebol ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwvjzg7h5ewAzLMaEx4AaABAg
+:article-Ugwvjzg7h5ewAzLMaEx4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesEntity 
+                        :entity-UE ;
+                   :referesKeyword 
+                        :keyword-social ;
+                   :referesBrand 
+                        :brand-Com ,
+                        :brand-CDS ,
+                        :brand-Bloco ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxZg-RziVPxLyNMued4AaABAg
+:article-UgxZg-RziVPxLyNMued4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Centro ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugw6daFu3lOLsk6jEyh4AaABAg
+:article-Ugw6daFu3lOLsk6jEyh4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesCountry 
+                        :country-Coreia_do_Norte ,
+                        :country-Venezuela ;
+                   :referesBrand 
+                        :brand-Com ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgyJKfq8dI0ElPaI7gB4AaABAg
+:article-UgyJKfq8dI0ElPaI7gB4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgwEQ-qMAz3RIKy-Z-V4AaABAg
+:article-UgwEQ-qMAz3RIKy-Z-V4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesBrand 
+                        :brand-Adolfo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxI6-F9g4Apg3Mm2PZ4AaABAg
+:article-UgxI6-F9g4Apg3Mm2PZ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-Ugwj2FlINMNjuBR6WF14AaABAg
+:article-Ugwj2FlINMNjuBR6WF14AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgygYl65o4BwTHcQeOJ4AaABAg
+:article-UgygYl65o4BwTHcQeOJ4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+                   :referesKeyword 
+                        :keyword-medo ;
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-UgxH9NaK8l2x2M0mV1N4AaABAg
+:article-UgxH9NaK8l2x2M0mV1N4AaABAg rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Text ;
+           :sentimentAnalysis """"""^^xsd:string .
+

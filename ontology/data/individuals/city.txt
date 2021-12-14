@@ -1,0 +1,7 @@
+
+###  http://sparql.ilch.uminho.pt/minors#city-Braga
+:city-Braga rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city "Braga"^^xsd:string .
+
+            

@@ -1,0 +1,7 @@
+
+###  http://sparql.ilch.uminho.pt/minors#minority-Mulheres
+:minority-Mulheres rdf:type owl:NamedIndividual ,
+                 :Minority ;
+        :minority "Mulheres"^^xsd:string .
+
+            
