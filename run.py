@@ -6,18 +6,20 @@ from argparse import ArgumentParser
 from gooey import Gooey, GooeyParser#GUI
 
 #To ignore the GUI and run in CLI run with --ignore-gooey e.g.:
-#pythonw --ignore-gooey run.py --fileName xxx etc.
+#pythonw --ignore-gooey run.py --filePath xxx etc.
 
 import iterate
 
 @Gooey(
     program_name="EntiGraph",
-    program_description="Identify entities and generate RDF graphs",
+    program_description="Identify entities and generate/update RDF graphs",
     default_size=(600, 720),
     #fullscreen=True,
 
     #progress_regex=r"^progress: (?P<current>\d+)/(?P<total>\d+)$",
-    #progress_expr="current / total * 100"
+    progress_regex=r"^> Extraction #(?P<current>\d+)/(?P<total>\d+)$",    
+    progress_expr="current / total * 100"
+    
     #, hide_progress_msg=True
     #navigation="TABBED",
 )
@@ -29,8 +31,8 @@ def cli():
 
         mandatory.add_argument(
             "-i",
-            "--fileName",
-            required=True,
+            "--filePath",
+            required=False,
             metavar="Input",
             help="Input file.",
 
@@ -43,11 +45,13 @@ def cli():
             "--workFolder",
             required=True,
             metavar="Output",
-            help="Output file.",
+            help="Output folder name at /saves.",
+            default="project1",
 
             #Gooey extra arguments:
-            widget="FileSaver",
-            gooey_options=dict(wildcard="Turtle (.ttl)|*.ttl")
+            action="store"
+            #widget="FileSaver",
+            #gooey_options=dict(wildcard="Turtle (.ttl)|*.ttl")
         )
 
         optional.add_argument(
@@ -115,24 +119,49 @@ def cli():
             #Gooey extra arguments:
             action="store"
         )
+        
+        
+        
+        ### HIDDEN ARGS ONY USED VIA CLI, HIDDEN FROM GUI
+        optional.add_argument(
+            "-j",
+            "--json",
+            required=False,
+            metavar="JSON Array",
+            default="pt",
+            help="String with a JSON array",
+            gooey_options={'visible': False},
+            
+            #widget="Textarea",
+
+            #Gooey extra arguments:
+            action="store"
+        )
 
 
         args = parser.parse_args()
+    
+        print("==Variables==")
+        print(" > filePath = " + str(args.filePath))
+        print(" > allFolder = " + str(args.allFolder))
+        print(" > workFolder = " + str(args.workFolder))
+        print(" > mainClass = " + str(args.mainClass))
+        print(" > skeleton = " + str(args.skeleton))
+        print(" > sentiment = " + str(args.sentiment))
+        print(" > sourceLang = " + str(args.sourceLang))
+        
+        print("\n")
+        
+        print("Starting EntiGraph ontology generator...")
 
-        print(args.fileName)
-        print(args.allFolder)
-        print(args.workFolder)
-        print(args.mainClass)
-        print(args.skeleton)
-        print(args.sentiment)
-
-        """
-        iterate.Iterate(fileName=args.fileName, 
+        
+        iterate.Iterate(filePath=args.filePath, 
         allFolder=args.allFolder, 
         workFolder=args.workFolder, 
         mainClass=args.mainClass, 
         skeleton=args.skeleton, 
-        sentiment=args.sentiment)
-        """
+        sentiment=args.sentiment,
+        sourceLang=args.sourceLang)
+        
 if __name__ == "__main__":
     cli()

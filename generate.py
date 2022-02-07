@@ -43,7 +43,7 @@ def generate(savePath, skeleton, mainClass):
     saveFinal(finalFile, savePath)
     saveSkeleton(skeleton, savePath)
     
-    input("Done! Individuals assembled with the ontology skeleton.\nCheck the saves folder for the result.\nPress enter to exit")
+    print("\n>>> Done! Individuals assembled with the ontology skeleton.\nCheck the saves folder for the result.\nPress enter to exit")
 
 def upateSkeleton(nameClass, skeleton):
     rdf2Insert = newClass(nameClass)
@@ -72,22 +72,40 @@ def newClass(nameClass):
     return data"""
 
 def saveFinal(data, savePath):
-    timestap = time.time()
-    #path = os.path.join(os.getcwd(), "generated", "ontology_"+str(timestap)+".ttl")
-    fileName = "ontology_"+str(countFilesAdnDirsInDir(savePath))+"_"+str(timestap)+".ttl"
+    try:#if 1st time it will not find file to replace
+        doBackup(savePath)
+    except:
+        pass
+    #timestap = time.time()
+    #fileName = "ontology_"+str(countFilesAdnDirsInDir(savePath))+"_"+str(timestap)+".ttl"
+    fileName = "ontology.ttl"
     path = savePath.joinpath(fileName)
     with open(path, 'w', encoding="utf-8") as f:
         f.write(data)
+
+# Backup old ontology.ttl before replacing
+def doBackup(savePath):
+    timestap = time.time()
+    backupDir = savePath.joinpath("backups")
+    os.makedirs(backupDir, exist_ok=True)#make dir if not exist
+    currentFile = savePath.joinpath("ontology.ttl")
+    newName = "ontology_"+str(countFilesAdnDirsInDir(backupDir)+1)+"_"+str(timestap)+".ttl"
+    # Move / Rename / Replace
+    target = currentFile.replace(currentFile.parent / "backups" / newName)
+    print("\n > Backup made: old ontology.tllf saved at backups folder")
 
 def saveSkeleton(skeleton, saveFolder):
     savePath = saveFolder.joinpath("data", "ontology_skeleton.ttl")
     with open(savePath, "w+", encoding="utf-8") as file:
         file.write(skeleton)
 
-#Used to number the ontology save name. Since it will alwyas have the "data" folder, there is not need to increment by 1
+#Used to number the ontology save name. Note: it starts zero, so increment + 1
 def countFilesAdnDirsInDir(path):
-    No_of_files = len(os.listdir(path))
-    return No_of_files
+    try:
+        No_of_files = len(os.listdir(path))
+        return No_of_files
+    except:
+        return 0
     
 if __name__ == '__main__':
     main = generate()

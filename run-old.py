@@ -19,4 +19,4 @@ mainClass = "Sol"
 skeleton = ""
 
 if __name__ == '__main__':
-    iterate.Iterate(fileName=fileName, allFolder=allFolder, workFolder=workFolder, mainClass=mainClass, skeleton=skeleton, sentiment=False)
+    iterate.Iterate(fileName=fileName, allFolder=allFolder, workFolder=workFolder, mainClass=mainClass, skeleton=skeleton, sentiment=True)

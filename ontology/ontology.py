@@ -54,7 +54,7 @@ class Ontology():
         if "sourceLang" in configs:
             self.sourceLang = configs["sourceLang"]
         else:
-            self.sourceLang = "pt"
+            self.sourceLang = "en"
             
         if "sentimentAnalyze" in configs:
             self.sentimentAnalyze = configs["sentimentAnalyze"]
@@ -100,7 +100,7 @@ class Ontology():
         "priority":[],
         }
 
-        self.sa = sentiment.SentimentAnalysis()
+        self.sa = sentiment.SentimentAnalysis(lang=self.sourceLang)
         
         
         for individualType in self.individuals:
@@ -201,7 +201,7 @@ class Ontology():
             line += '''
            :'''+ str(property) +''' """'''+str(self.properties[property]).strip().replace('"',r'\"')+'''"""^^xsd:string ;
             '''
-           
+
         if self.sentimentAnalyze==True:
             line += '''
            :sentimentAnalysis """'''+self.sa.sentiment(self.text)+'''"""^^xsd:string .
@@ -219,7 +219,8 @@ class Ontology():
             
         #self.saveSkeleton()
         #self.generateOntology()
-        print(">Entities extracted from id "+articleId+" and saved at:\n"+str(self.mainFolder))
+        print("- Entities extracted from id "+articleId)
+        print("- Saved at:\n"+str(self.mainFolder))
 
     def articleReferes(self, referesX, individuals):
         line = ''

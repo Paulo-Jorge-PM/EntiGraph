@@ -14,19 +14,35 @@ from textblob.sentiments import NaiveBayesAnalyzer
 
 class SentimentAnalysis:
 
-    def __init__(self, text='', model=False, lexFolder='SentiLex-PT02'):
+    def __init__(self, text='', model=False, lexFolder='SentiLex-PT02', lang="pt"):
 
         base_path = os.path.join(os.getcwd(), 'data', lexFolder)
         self.train = []
         self.wordsPT = []
         self.wordsPT_sentiments = []
         
+        self.lang = lang
+        self.model = model
+        
         if model:
-            self.model = self.trainModel(base_path)
-            self.sentimentPT(text, self.model)
+            self.cl = self.trainModel(base_path)
+            #self.sentimentPT(text, self.model)
         #else:
-        #    self.sentiment(text)
-
+        #    self.sentimentPtTranslator(text)
+    
+    def sentiment(self, txt):
+        # Note: the pt Model=true is problematic, use the traanslation version instead with model=false
+        if self.lang == "pt":
+            if self.model == True:
+                sa = self.sentimentPT(txt, self.cl)
+            else:
+                sa = self.sentimentPtTranslator(txt)
+        elif self.lang == "en":
+            sa = self.sentimentEn(txt)
+        print("- Sentiment Analysis: " + str(sa))
+        return str(sa)
+        
+    
     #Train Model
     def trainModel(self, base_path):
         c=0
@@ -75,15 +91,16 @@ class SentimentAnalysis:
 
         return polarity
 
-    #Sentiment Analysis with English Algorithm - Translation 1st - Not ideal, but english algorithm models are better
-    def sentiment(self, text):
-        
+    #Sentiment Analysis with English Algorithm - Translation 1st - Not ideal, but english algorithm model is better
+    def sentimentPtTranslator(self, text):
         sentence = TextBlob(text)
+        
         try:
             en = sentence.translate(to='en', from_lang='pt')
             analyzer1 = TextBlob(str(en))
             polarity = analyzer1.sentiment.polarity
         except:
+            print("SA failed")
             log='>>Translation failed for: ' + str(sentence)
             self.logError(log)
             polarity = '0'
@@ -91,7 +108,6 @@ class SentimentAnalysis:
         #enGoogle = googleTranslator.translate(text, dest='en', src='pt').text  
         #print(en)
         #print(enGoogle)
-
         return str(polarity)
 
         """analyzer2 = TextBlob(str(en), analyzer=NaiveBayesAnalyzer())
@@ -101,6 +117,16 @@ class SentimentAnalysis:
         neg = analyzer2.sentiment.p_neg
         print(pos, neg)"""
 
+    def sentimentEn(self, text):
+        sentence = TextBlob(text)
+        try:
+            polarity = sentence.sentiment.polarity
+        except:
+            log='>>Translation failed for: ' + str(text)
+            self.logError(log)
+            polarity = '0'
+        return str(polarity)
+
     def logError(self,log):
         print('Sentiment Analysis failed')
         logFile = pathlib.Path.cwd().joinpath('sentimentAnalysis','logs','translationFailed.txt')
@@ -108,6 +134,10 @@ class SentimentAnalysis:
             file.write(log)
 		
 if __name__ == '__main__':
-    text="Japão: veados de Nara estão a morrer por ingestão de plástico"
+    textPT = "Odeio coisas verdes!"
+    textEN = "I hate to eat green things!"
+    sa = SentimentAnalysis(lang="pt")
     #main = SentimentAnalysis().sentiment(text)
-    main = SentimentAnalysis(text, model=True)
+    #main = SentimentAnalysis(text, model=True)
+    result = sa.sentiment(textPT)
+    print(result)
