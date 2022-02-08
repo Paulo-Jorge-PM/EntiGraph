@@ -1,0 +1,19 @@
+
+###  http://sparql.entigraph.di.pt/corpus#country-Portugal
+:country-Portugal rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :country "Portugal"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#country-Jamaica
+:country-Jamaica rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :country "Jamaica"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#country--ndia
+:country--ndia rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :country "Índia"^^xsd:string .
+
+            

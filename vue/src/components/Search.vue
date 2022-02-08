@@ -3,17 +3,10 @@
     <v-row class="text-center">
       <v-col class="mb-4">
         <h1 class="display-2 font-weight-bold mb-3">
-          Pesquisar 
+          Semantic Search 
         </h1>
 
-      <v-layout row wrap justify-center>
-          <v-switch align-center
-            v-model="db"
-            :label="`Corpus: ${db.toString()}`"
-            false-value="indiferenciado"
-            true-value="minorias"
-          ></v-switch>
-      </v-layout>
+
 
       <div id="search" class="search">
 
@@ -56,7 +49,7 @@
 <div v-if="loading">
 <br>
 <v-progress-circular :indeterminate="loading" :value="0" size="24" class="ml-2"></v-progress-circular>
-<span style="color:gray;"> Aguarde, a carregar dados...</span>
+<span style="color:gray;"> Wait please, loading data...</span>
 </div>
 
       </div>
@@ -96,13 +89,10 @@
       :loading="loading"
     >
 
-    <template v-slot:item.dataPub="row">
-    {{ row.item.dataPub.split("T")[0] }}
-  </template>
   
-    <template v-slot:item.article="row">
-    <b><a :set='id = row.item.article.split("#")[1]' :href="metadados+id" target="_blank">
-     METADADOS
+    <template v-slot:item.sourceUrl="row">
+    <b><a :set='id = row.item.sourceUrl' :href="row.item.sourceUrl" target="_blank">
+     OPEN
     </a></b>
   </template>
 
@@ -119,7 +109,7 @@
 
     <v-row class="text-center">
       <v-col class="mb-4">
-      <blockquote id="search-note">Poderá efectuar qualquer tipo de pesquisa e descarregamento de corpus de dados através de queries <a href="http://127.0.0.1:7200">SPARQL</a>. Esta página pretende ser um mecanismo de pesquisa simplificado (limitado a 500 resultados), com interface gráfica e formulário de filtragem visual, para utilizadores que não estejam confortáveis com as especificações técnicas de consulta de dados em ontologias. No entanto será sempre inferior à precisão e profundidade de pesquisa direta com queries SPARQL, por essa razão recomendamos consulta das especificões.</blockquote>
+      <blockquote id="search-note">For SPARQL queries go to <a href="http://localhost:3888" target="_blank">API</a>.</blockquote>
       </v-col>
     </v-row>
 
@@ -136,7 +126,8 @@ import axios from 'axios'
 //const flaskSparql = require("@/config/global").flaskSparql + '?output=json&external=true';
 //const flaskDownload = require("@/config/global").flaskDownload + '?output=csv';
 
-const netlang_graphdb = require("@/config/global").netlang_graphdb
+const graph = require("@/config/global").graph+"?q="
+const uri = require("@/config/global").uri
 
   export default {
     name: 'Search',
@@ -162,12 +153,15 @@ const netlang_graphdb = require("@/config/global").netlang_graphdb
       },
       { text: 'Data', value: 'row' },
       { text: 'Texto', value: 'row' },*/
-      { text: 'Data', sortable: true, value: 'dataPub' },
+      //{ text: 'Data', sortable: true, value: 'timestamp' },
+      { text: 'URL', value: 'sourceUrl' },
+      { text: 'ID', value: 'id' },
+      { text: 'User', value: 'user' },
+      { text: 'Year', value: 'timestamp' },
       //{ text: 'Minoria', sortable: true, value: 'minority' },
-      { text: 'Título', value: 'title' },
-      { text: 'ID', value: 'article' },
-      { text: 'Original', value: 'link' },
-      //{ text: 'Texto', value: 'text' },
+      //{ text: 'Título', value: 'title' },
+      {text: 'Sentiment', value: 'sentimentAnalysis'},
+      { text: 'Text', value: 'text' },
     ],
 
     classes: [
@@ -198,7 +192,7 @@ const netlang_graphdb = require("@/config/global").netlang_graphdb
     filters: [
       {'text': 'Ano de publicação maior do que...', 'value': 'dataMaior'},
       {'text': 'Ano de publicação menor do que...', 'value': 'dataMenor'},
-      {'text': 'Ano de publicação maior a...', 'value': 'dataIgual'},
+      {'text': 'Ano de publicação igual a...', 'value': 'dataIgual'},
       {'text': 'Minoria igual a...', 'value': 'minoriaIgual'},
       {'text': 'Contém palavra igual a...', 'value': 'keywordIgual'},
     ],
@@ -225,7 +219,7 @@ const netlang_graphdb = require("@/config/global").netlang_graphdb
 
     query: null,
 
-    db: 'netlang2',
+    db: 'hiperfolio',
 
     articlePage: 'http://minors.ilch.uminho.pt/articles',
 
@@ -273,7 +267,7 @@ const netlang_graphdb = require("@/config/global").netlang_graphdb
       let row = this.findObject(this.classes, "id", id);
       this.activeClasse = row;
       let query = `
-PREFIX : <http://sparql.entigraph.di.pt/corpus#>
+PREFIX : <`+uri+`#>
 SELECT DISTINCT ?row WHERE {
   ?article a :` + row.subclasses[0] + ` .
   ?article :` + row.subclasses[1] + ` ?row .
@@ -343,32 +337,38 @@ ORDER BY ?row
     },
 
     queryClasse(sparql, row) {
+      this.query = encodeURIComponent(sparql);
+      let url = graph+this.query;
       var _this = this;
     /*axios.post(flaskSparql, {
                     query: 'this.sparql',
                     description: 'uuuu'
                 })*/
             axios({
-            method: 'POST',
-            url: netlang_graphdb,
+            method: 'GET',
+            url: url,
             headers: {
-              "Accept":"text/csv", 
-              "Content-Type":"application/x-www-form-urlencoded"
+              "Accept":"application/json", 
+              //"Content-Type":"application/x-www-form-urlencoded"
               //"Content-Length": sparql.length
             },
-            data: {query: sparql}
+            //data: {query: sparql}
             })
             .then(function (response) {
+
                 let data = response.data;
+
                 _this.newSubClasse(data, row);
             })
             .catch(function (error) {
                 console.log(error)
+                //alert(error)
             })
     },
 
     // eslint-disable-next-line no-unused-vars
     newSubClasse(data, row) {
+
 
       //let subclasses = this.findObject(this.classes, "id", id);
       /*let form = `
@@ -379,7 +379,8 @@ ORDER BY ?row
           </select>
       `*/
 
-      let cleaned = this.myNormalize(JSON.parse(data))
+      //let cleaned = this.myNormalize(JSON.parse(data))
+      let cleaned = data; 
 
       //console.log(this.myNormalize(data))
 
@@ -421,12 +422,15 @@ ORDER BY ?row
     this.tableCounter(classe1, classe2, subclass, filter);
 
     let sparql = `
-PREFIX : <http://sparql.entigraph.di.pt/corpus#>
-SELECT DISTINCT ?text (SAMPLE(?article) AS ?article) (SAMPLE(?timestamp) AS ?timestamp) (SAMPLE(?sourceUrl) AS ?sourceUrl) WHERE {
+PREFIX : <`+uri+`#>
+SELECT DISTINCT ?text (SAMPLE(?article) AS ?article) (SAMPLE(?timestamp) AS ?timestamp) (SAMPLE(?id) AS ?id) (SAMPLE(?user) AS ?user) (SAMPLE(?sentimentAnalysis) AS ?sentimentAnalysis) (SAMPLE(?sourceUrl) AS ?sourceUrl) WHERE {
   ?article a :Article .
   ?article :timestamp ?timestamp .
   ?article :text ?text .
+  ?article :id ?id .
+  ?article :user ?user .
   ?article :sourceUrl ?sourceUrl .
+  ?article :sentimentAnalysis ?sentimentAnalysis .
   `
   if(subclass!='') {
     sparql = sparql + `
@@ -447,16 +451,17 @@ GROUP BY ?text
 LIMIT ` + this.limit + `
     `
 
-    //this.query = encodeURIComponent(sparql);
-    this.query = sparql;
+    this.query = encodeURIComponent(sparql);
+    //this.query = sparql;
     var _this = this;
 
     axios({
-    method: 'POST',
-    url: netlang_graphdb,
+    method: 'GET',
+    url: graph+this.query,
     headers: {
-      "Accept":"text/csv", 
-      "Content-Type":"application/x-www-form-urlencoded"
+      "Accept":"application/json", 
+      //"Accept":"text/csv", 
+      //"Content-Type":"application/x-www-form-urlencoded"
       //'Content-Length': sparql.length
     },  
     //data: querystring.stringify({query: sparql})
@@ -474,7 +479,7 @@ LIMIT ` + this.limit + `
 
 tableCounter(classe1, classe2, subclass, filter) {
       let sparql = `
-PREFIX : <http://sparql.entigraph.di.pt/corpus#>
+PREFIX : <`+uri+`#>
 SELECT (COUNT(DISTINCT ?text) as ?count) WHERE {
   ?article a :Article .
   ?article :timestamp ?timestamp .
@@ -499,18 +504,19 @@ SELECT (COUNT(DISTINCT ?text) as ?count) WHERE {
 }
 #GROUP BY ?text
     `
-    
+    this.query = encodeURIComponent(sparql);
     var _this = this;
 
     axios({
-    method: 'POST',
-    url: netlang_graphdb,
+    method: 'GET',
+    url: graph+this.query,
     headers: {
-      "Accept":"text/csv", 
-      "Content-Type":"application/x-www-form-urlencoded"
+      "Accept":"application/json", 
+      //"Accept":"text/csv", 
+      //"Content-Type":"application/x-www-form-urlencoded"
       //'Content-Length': sparql.length
     }, 
-    data: {query: sparql}
+    //data: {query: sparql}
     })
     .then(function (response) {
         let data = response.data;
@@ -522,25 +528,28 @@ SELECT (COUNT(DISTINCT ?text) as ?count) WHERE {
 },
 
   setTable(data) {
-    this.table = this.myNormalize(JSON.parse(data));
+    //this.table = this.myNormalize(JSON.parse(data));
+    this.table = data;
     this.loading = false;
   },
 
   setCountTable(data) {
-    this.tableCount = JSON.parse(data).results.bindings[0].count.value;
+    //this.tableCount = JSON.parse(data).results.bindings[0].count.value;
+    this.tableCount = data[0].count.value;
   },
 
   download() {
     var _this = this;
     axios({
-    method: 'POST',
-    url: netlang_graphdb,
+    method: 'GET',
+    url: graph+this.query,
     headers: {
-      "Accept":"text/csv", 
-      "Content-Type":"application/x-www-form-urlencoded"
+      "Accept":"application/json", 
+      //"Accept":"text/csv", 
+      //"Content-Type":"application/x-www-form-urlencoded"
       //'Content-Length': this.query.length
     }, 
-    data: {query: this.query}
+    //data: {query: this.query}
     })
     .then(function (response) {
         //let data = response.data;
@@ -558,7 +567,7 @@ SELECT (COUNT(DISTINCT ?text) as ?count) WHERE {
       const url = window.URL.createObjectURL(new Blob([response.data]))
       const link = document.createElement('a')
       link.href = url
-      link.setAttribute('download', 'data.csv') //or any other extension
+      link.setAttribute('download', 'data.json') //or any other extension
       document.body.appendChild(link)
       link.click()
     },

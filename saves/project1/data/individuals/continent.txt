@@ -1,0 +1,7 @@
+
+###  http://sparql.entigraph.di.pt/corpus#continent-Europa
+:continent-Europa rdf:type owl:NamedIndividual ,
+                 :Continent ;
+        :continent "Europa"^^xsd:string .
+
+            

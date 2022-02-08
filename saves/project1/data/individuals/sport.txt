@@ -1,0 +1,7 @@
+
+###  http://sparql.entigraph.di.pt/corpus#sport-Futebol
+:sport-Futebol rdf:type owl:NamedIndividual ,
+                 :Sport ;
+        :sport "Futebol"^^xsd:string .
+
+            

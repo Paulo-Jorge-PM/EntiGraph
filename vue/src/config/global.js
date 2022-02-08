@@ -8,7 +8,8 @@ module.exports.flaskDownload = "http://minors.ilch.uminho.pt/api/sparql"
 //GET QUERY:
 //module.exports.netlang_graphdb = "http://localhost:7200/repositories/netlang2?query="
 //POST QUERY: send quuery body param, without encoding/normalizing as plain text.
-module.exports.netlang_graphdb = "http://localhost:7200/repositories/netlang2"
+module.exports.graph = "http://localhost:3888/sparql"
+module.exports.uri = "http://sparql.entigraph.di.pt/corpus"
 
 //For tests (to avoid CORS erros)
 //module.exports.netlang_graphdb = "http://sparql.ilch.uminho.pt/repositories/netlang"

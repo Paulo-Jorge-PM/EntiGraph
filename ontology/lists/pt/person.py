@@ -7050,7 +7050,6 @@ data = {
 "Amy Millan":{"job":"Músico","wikiPage":""},
 "Amy Schumer":{"job":"Músico","wikiPage":""},
 "Andrea Berg":{"job":"Músico","wikiPage":""},
-"Amigos":{"job":"Músico","wikiPage":""},
 "Amil":{"job":"Músico","wikiPage":""},
 "Amon Amarth":{"job":"Músico","wikiPage":""},
 "April Boy Regino":{"job":"Músico","wikiPage":""},
