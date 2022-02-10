@@ -2,7 +2,9 @@ var express = require('express');
 var router = express.Router();
 const oxigraph = require('oxigraph');
 const fs = require('fs');
+const path = require('path');
 
+//app.use(express.static(path.join(__dirname, '../my-app/dist')));
 
 
 const BindingMapToObject = (map) => {
@@ -65,9 +67,16 @@ function doQuery(query, uri, project) {
 }
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
+router.get('/view', function(req, res, next) {
     res.send("API: <a href='http://localhost:3888/sparql?q=SELECT%20DISTINCT%20?s%20WHERE%20%7B%20?s%20?p%20?o%20%7D&uri=http://sparql.entigraph.di.pt/corpus&project=project1' target='_blank'>http://localhost:3888/sparql</a><br/>/sparql?query=xx will execute a sparql query and give JSON as response. Note: query should be url encoded.");
   //res.render('index', { title: 'Express' });
+  
+});
+
+router.get('/', function(req, res, next) {
+  //res.render('vue/index.html');
+  res.sendFile(path.join(__dirname, '../views/index.html'));
+  //res.sendFile("../views/vue/index.html", { root: __dirname })
   
 });
 

@@ -1,0 +1,5 @@
+[
+{"id":9,"user":1,"title":"Novo título sobre cãe, gato","body":"Novo body, locais como Braga, Lisboa, Portugal, e pessoas como António Costa.","thumbnail":[],"categories":[],"typePost":"Activity","typeId":2,"rate":"","dateCreated":"2022-02-09","views":0,"privacy":"Public","assets":[],"comments":[],"jobs":[],"skills":[],"persons":[],"sourceUrl":"http://localhost:3000/#/posts/9","text":"Novo título sobre um cão, gato Novo body, locais como Braga, Lisboa, Portugal, e pessoas como António Costa.","userName":"Paulo", "year":"2021"},
+
+{"id":8,"user":2,"title":"Outro título sobre macaco","body":"Descriçõa sobre África, organizações como GNR ou partidos como o PSD.","thumbnail":[],"categories":[],"typePost":"Activity","typeId":2,"rate":"","dateCreated":"2022-02-09","views":0,"privacy":"Public","assets":[],"comments":[],"jobs":[],"skills":[],"persons":[],"sourceUrl":"http://localhost:3000/#/posts/9","text":"Outro título sobre um macaco Descriçõa sobre África, organizações como GNR ou partidos como o PSD.","userName":"Paulo", "year":"2022"}
+]

@@ -1,109 +1,13 @@
 
-###  http://sparql.entigraph.di.pt/corpus#keyword-racismo
-:keyword-racismo rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "racismo"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-fome
-:keyword-fome rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "fome"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-ataque
-:keyword-ataque rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "ataque"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-racista
-:keyword-racista rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "racista"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-vergonha
-:keyword-vergonha rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "vergonha"^^xsd:string .
-
-            
 ###  http://sparql.entigraph.di.pt/corpus#keyword-c-o
 :keyword-c-o rdf:type owl:NamedIndividual ,
                  :Keyword ;
         :keyword "cão"^^xsd:string .
 
             
-###  http://sparql.entigraph.di.pt/corpus#keyword-pobreza
-:keyword-pobreza rdf:type owl:NamedIndividual ,
+###  http://sparql.entigraph.di.pt/corpus#keyword-gato
+:keyword-gato rdf:type owl:NamedIndividual ,
                  :Keyword ;
-        :keyword "pobreza"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-homem
-:keyword-homem rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "homem"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-viol-ncia
-:keyword-viol-ncia rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "violência"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-guerra
-:keyword-guerra rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "guerra"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-campo
-:keyword-campo rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "campo"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-lei
-:keyword-lei rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "lei"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-medo
-:keyword-medo rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "medo"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-social
-:keyword-social rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "social"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-crime
-:keyword-crime rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "crime"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-negra
-:keyword-negra rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "negra"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-educa--o
-:keyword-educa--o rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "educação"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#keyword-direitos
-:keyword-direitos rdf:type owl:NamedIndividual ,
-                 :Keyword ;
-        :keyword "direitos"^^xsd:string .
+        :keyword "gato"^^xsd:string .
 
             

@@ -1,0 +1,54 @@
+
+###  http://sparql.entigraph.di.pt/corpus#article-8
+:article-8 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Activity ;
+           :id """8"""^^xsd:string ;
+            
+           :sourceUrl """"""^^xsd:string ;
+            
+           :typePost """Artifact"""^^xsd:string ;
+            
+           :user """1"""^^xsd:string ;
+            
+           :userName """"""^^xsd:string ;
+            
+           :dateCreated """2022-02-09"""^^xsd:string ;
+            
+           :title """Test title"""^^xsd:string ;
+            
+           :body """Body text"""^^xsd:string ;
+            
+           :text """"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-7
+:article-7 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Activity ;
+           :id """7"""^^xsd:string ;
+            
+           :sourceUrl """"""^^xsd:string ;
+            
+           :typePost """Artifact"""^^xsd:string ;
+            
+           :user """2"""^^xsd:string ;
+            
+           :userName """"""^^xsd:string ;
+            
+           :dateCreated """2022-02-09"""^^xsd:string ;
+            
+           :title """22Test title"""^^xsd:string ;
+            
+           :body """22Body text"""^^xsd:string ;
+            
+           :text """"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0"""^^xsd:string .
+

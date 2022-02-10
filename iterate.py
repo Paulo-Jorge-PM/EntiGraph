@@ -18,7 +18,7 @@ __license__ = "MIT"
 
 class Iterate:
 
-    def __init__(self, filePath=None, allFolder=False, workFolder="ontology1", mainClass="", skeleton=None, sourceLang="en", sentiment=False, json=None):
+    def __init__(self, filePath=None, allFolder=False, workFolder="ontology1", mainClass="", skeleton=None, sourceLang="en", sentiment=False, json=None, fieldColumns=None):
 		
         self.filePath = filePath
         self.allFolder = allFolder
@@ -26,6 +26,8 @@ class Iterate:
         self.mainClass = mainClass#Main class name for this entry (it will add it to the ontology skeleton if not exist)
         self.sentiment = sentiment
         self.sourceLang = sourceLang
+        
+        self.fieldColumns = fieldColumns
         
         self.saveFolder = pathlib.Path.cwd().joinpath('saves', self.workFolder)
         
@@ -52,8 +54,20 @@ class Iterate:
         else:
             data = self.openFile(filePath)
         js = self.loadJson(data)
-        sourceUrl = js["header"]["url"]
-        for i in js['commentThread']:
+        #sourceUrl = js["header"]["url"]
+        #Iterate over JS according to schema in fieldColumns. Empty fields will be written, and non existent fields will continue the same
+        for item in js:
+            fieldColumns = json.loads(self.fieldColumns)
+            print("\n> Extraction #"+str(self.count)+"/"+str(len(js)))
+            print('> Content: """' + str(item) +'"""')
+            self.count+=1
+            for key in fieldColumns:
+                if key in item:
+                   fieldColumns[key] = str(item[key])
+            ontology.Ontology(text=fieldColumns["text"], mainClass=mainClass, properties=fieldColumns, configs={"skeleton":skeleton, "workFolder":workFolder, "sourceLang": self.sourceLang, "sentimentAnalyze":self.sentiment})
+
+        """for i in js['commentThread']:
+            fieldColumns = self.fieldColumns
             print("\n> Extraction #"+str(self.count)+"/"+str(len(js['commentThread'])))
             print('- Text: """' + i["commentText"] +'"""')
             self.count+=1
@@ -61,7 +75,7 @@ class Iterate:
             timestamp = i["timestamp"]
             user = i["user"]
             id = i["id"]
-            ontology.Ontology(text=comment, mainClass=mainClass, properties={"id":id, "sourceUrl":sourceUrl, "timestamp":timestamp, "user":user, "text":comment, "type":"post", "source":"hiperfolio"}, configs={"skeleton":skeleton, "workFolder":workFolder, "sourceLang": self.sourceLang, "sentimentAnalyze":self.sentiment})
+            ontology.Ontology(text=comment, mainClass=mainClass, properties={"id":id, "sourceUrl":sourceUrl, "timestamp":timestamp, "user":user, "text":comment, "type":"post", "source":"hiperfolio"}, configs={"skeleton":skeleton, "workFolder":workFolder, "sourceLang": self.sourceLang, "sentimentAnalyze":self.sentiment})"""
             
 
 

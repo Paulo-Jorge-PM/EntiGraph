@@ -1,31 +1,7 @@
 
-###  http://sparql.entigraph.di.pt/corpus#politicalParty-BE
-:politicalParty-BE rdf:type owl:NamedIndividual ,
-                 :PoliticalParty ;
-        :politicalParty "BE"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#politicalParty-PS
-:politicalParty-PS rdf:type owl:NamedIndividual ,
-                 :PoliticalParty ;
-        :politicalParty "PS"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#politicalParty-CHEGA
-:politicalParty-CHEGA rdf:type owl:NamedIndividual ,
-                 :PoliticalParty ;
-        :politicalParty "CHEGA"^^xsd:string .
-
-            
 ###  http://sparql.entigraph.di.pt/corpus#politicalParty-PSD
 :politicalParty-PSD rdf:type owl:NamedIndividual ,
                  :PoliticalParty ;
         :politicalParty "PSD"^^xsd:string .
-
-            
-###  http://sparql.entigraph.di.pt/corpus#politicalParty-CDS
-:politicalParty-CDS rdf:type owl:NamedIndividual ,
-                 :PoliticalParty ;
-        :politicalParty "CDS"^^xsd:string .
 
             

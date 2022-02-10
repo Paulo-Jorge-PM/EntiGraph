@@ -2,9 +2,6 @@
   <v-container>
     <v-row class="text-center">
       <v-col class="mb-4">
-        <h1 class="display-2 font-weight-bold mb-3">
-          Semantic Search 
-        </h1>
 
 
 
@@ -67,7 +64,7 @@
     </v-row>
 
     <br>
-  <v-card v-if="table">
+  <v-card v-if="tableHasData">
     <v-card-title>
         Dados
         <v-spacer></v-spacer>
@@ -109,7 +106,7 @@
 
     <v-row class="text-center">
       <v-col class="mb-4">
-      <blockquote id="search-note">For SPARQL queries go to <a href="http://localhost:3888" target="_blank">API</a>.</blockquote>
+      <blockquote id="search-note">For SPARQL queries go to <a href="/sparql?q=SELECT%20DISTINCT%20?s%20WHERE%20%7B%20?s%20?p%20?o%20%7D&project=project1&uri=http://sparql.entigraph.di.pt/corpus" target="_blank">API</a>.</blockquote>
       </v-col>
     </v-row>
 
@@ -153,25 +150,23 @@ const uri = require("@/config/global").uri
       },
       { text: 'Data', value: 'row' },
       { text: 'Texto', value: 'row' },*/
-      //{ text: 'Data', sortable: true, value: 'timestamp' },
+      //{ text: 'Data', sortable: true, value: 'dateCreated' },
       { text: 'URL', value: 'sourceUrl' },
-      { text: 'ID', value: 'id' },
-      { text: 'User', value: 'user' },
-      { text: 'Year', value: 'timestamp' },
+      //{ text: 'ID', value: 'id' },
+      { text: 'User', value: 'userName' },
+      { text: 'Date', value: 'dateCreated' },
+      { text: 'Type', value: 'typePost' },
       //{ text: 'Minoria', sortable: true, value: 'minority' },
       //{ text: 'Título', value: 'title' },
       {text: 'Sentiment', value: 'sentimentAnalysis'},
       { text: 'Text', value: 'text' },
     ],
 
-    classes: [
-      {'text': 'Minorias', 'id': 'minority', 'subclasses': ['Minority','minority']},
+    classes: [     
+        {'text': 'Animais', 'id': 'animal', 'subclasses': ['Animal', 'animal']},    
       {'text': 'Pessoas', 'id': 'personName', 'subclasses': ['Person', 'personName']},
       {'text': 'Palavras-chave', 'id': 'keyword', 'subclasses': ['Keyword','keyword']},
       {'text': 'Partidos', 'id': 'politicalParty', 'subclasses': ['PoliticalParty', 'politicalParty']},
-      {'text': 'Animais', 'id': 'animal', 'subclasses': ['Animal', 'animal']},
-      {'text': 'Etnias', 'id': 'ethnicity', 'subclasses': ['Ethnicity', 'ethnicity']},
-      {'text': 'Religiões', 'id': 'religion', 'subclasses': ['Religion', 'religion']},
       {'text': 'Cidades', 'id': 'city', 'subclasses': ['City', 'city']},
       {'text': 'Países', 'id': 'country', 'subclasses': ['Country', 'country']},
       {'text': 'Continentes', 'id': 'continent', 'subclasses': ['Continent', 'continent']},
@@ -186,14 +181,17 @@ const uri = require("@/config/global").uri
       {'text': 'Canais de TV', 'id': 'tvChannel', 'subclasses': ['TvChannel','tvChannel']},
       {'text': 'Marcas de Carros', 'id': 'carBrand', 'subclasses': ['CarBrand','carBrand']}, 
       {'text': 'Desportos', 'id': 'sport', 'subclasses': ['Sport','sport']},
+        {'text': 'Minorias', 'id': 'minority', 'subclasses': ['Minority','minority']},
+      {'text': 'Etnias', 'id': 'ethnicity', 'subclasses': ['Ethnicity', 'ethnicity']},
+      {'text': 'Religiões', 'id': 'religion', 'subclasses': ['Religion', 'religion']},
 
     ],
 
     filters: [
-      {'text': 'Ano de publicação maior do que...', 'value': 'dataMaior'},
-      {'text': 'Ano de publicação menor do que...', 'value': 'dataMenor'},
-      {'text': 'Ano de publicação igual a...', 'value': 'dataIgual'},
-      {'text': 'Minoria igual a...', 'value': 'minoriaIgual'},
+      //{'text': 'Ano de publicação maior do que...', 'value': 'dataMaior'},
+      //{'text': 'Ano de publicação menor do que...', 'value': 'dataMenor'},
+      //{'text': 'Ano de publicação igual a...', 'value': 'dataIgual'},
+      //{'text': 'Minoria igual a...', 'value': 'minoriaIgual'},
       {'text': 'Contém palavra igual a...', 'value': 'keywordIgual'},
     ],
 
@@ -206,6 +204,7 @@ const uri = require("@/config/global").uri
     subclasses3: null,
 
     table: null,
+    tableHasData: false,
 
     tableCount: null,
 
@@ -219,7 +218,7 @@ const uri = require("@/config/global").uri
 
     query: null,
 
-    db: 'hiperfolio',
+    db: 'project1',
 
     articlePage: 'http://minors.ilch.uminho.pt/articles',
 
@@ -308,15 +307,16 @@ ORDER BY ?row
       let filter = '';
       if(this.filter == 'dataMaior') {
         filter = `
-        FILTER(YEAR(?dataPub) >= ` + this.inputFilter + `) .`
+        FILTER(YEAR(?dateCreated) >= ` + this.inputFilter + `) .`
       }
       else if(this.filter == 'dataMenor') {
         filter = `
-        FILTER(YEAR(?dataPub) <= ` + this.inputFilter + `) .`
+        FILTER(YEAR(?dateCreated) <= ` + this.inputFilter + `) .`
       }
       else if(this.filter == 'dataIgual') {
         filter = `
-        FILTER(YEAR(?dataPub) = ` + this.inputFilter + `) .`
+        FILTER( YEAR(?dateCreated) = ` + this.inputFilter + `) .`
+
       }
       else if(this.filter == 'minoriaIgual') {
         filter = `
@@ -423,14 +423,16 @@ ORDER BY ?row
 
     let sparql = `
 PREFIX : <`+uri+`#>
-SELECT DISTINCT ?text (SAMPLE(?article) AS ?article) (SAMPLE(?timestamp) AS ?timestamp) (SAMPLE(?id) AS ?id) (SAMPLE(?user) AS ?user) (SAMPLE(?sentimentAnalysis) AS ?sentimentAnalysis) (SAMPLE(?sourceUrl) AS ?sourceUrl) WHERE {
+SELECT DISTINCT ?text (SAMPLE(?article) AS ?article) (SAMPLE(?typePost) AS ?typePost) (SAMPLE(?dateCreated) AS ?dateCreated) (SAMPLE(?id) AS ?id) (SAMPLE(?user) AS ?user) (SAMPLE(?sentimentAnalysis) AS ?sentimentAnalysis) (SAMPLE(?sourceUrl) AS ?sourceUrl) (SAMPLE(?userName) AS ?userName) WHERE {
   ?article a :Article .
-  ?article :timestamp ?timestamp .
+  ?article :dateCreated ?dateCreated .
   ?article :text ?text .
   ?article :id ?id .
   ?article :user ?user .
+  ?article :typePost ?typePost .
   ?article :sourceUrl ?sourceUrl .
   ?article :sentimentAnalysis ?sentimentAnalysis .
+  ?article :userName ?userName .
   `
   if(subclass!='') {
     sparql = sparql + `
@@ -482,10 +484,9 @@ tableCounter(classe1, classe2, subclass, filter) {
 PREFIX : <`+uri+`#>
 SELECT (COUNT(DISTINCT ?text) as ?count) WHERE {
   ?article a :Article .
-  ?article :timestamp ?timestamp .
+  #?article :dateCreated ?dateCreated .
   ?article :text ?text .
-  ?article :sourceUrl ?sourceUrl .
-  #?article :text ?text .
+  #?article :sourceUrl ?sourceUrl .
   `
   if(subclass!='') {
     sparql = sparql + `
@@ -529,13 +530,19 @@ SELECT (COUNT(DISTINCT ?text) as ?count) WHERE {
 
   setTable(data) {
     //this.table = this.myNormalize(JSON.parse(data));
+    //alert(Object.keys(data[0]).length)
     this.table = data;
+    if(Object.keys(data[0]).length>0){
+        this.tableHasData=true;
+    } else {this.tableHasData=false;}
     this.loading = false;
   },
 
   setCountTable(data) {
     //this.tableCount = JSON.parse(data).results.bindings[0].count.value;
-    this.tableCount = data[0].count.value;
+    //alert(data[0].count)
+    this.tableCount = data[0].count
+    //this.tableCount = data[0].count.value;
   },
 
   download() {
@@ -564,7 +571,7 @@ SELECT (COUNT(DISTINCT ?text) as ?count) WHERE {
   },
 
     forceFileDownload(response){
-      const url = window.URL.createObjectURL(new Blob([response.data]))
+      const url = window.URL.createObjectURL(new Blob(JSON.stringify([response.data])))
       const link = document.createElement('a')
       link.href = url
       link.setAttribute('download', 'data.json') //or any other extension

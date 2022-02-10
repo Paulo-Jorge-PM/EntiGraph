@@ -45,7 +45,7 @@ def cli():
             "--workFolder",
             required=True,
             metavar="Output",
-            help="Output folder name at /saves.",
+            help="Output folder at /saves.",
             default="project1",
 
             #Gooey extra arguments:
@@ -65,7 +65,7 @@ def cli():
             #Gooey extra arguments:
             action="store"
         )
-        optional.add_argument(
+        '''optional.add_argument(
             "-a",
             "--allFolder",
             required=False,
@@ -74,6 +74,17 @@ def cli():
 
             #Gooey extra arguments:
             action="store_true"
+        )'''
+        optional.add_argument(
+            "-f",
+            "--fieldColumns",
+            required=False,
+            metavar="Data properties",
+            default='{"id":"", "sourceUrl":"", "typePost":"", "user":"", "userName": "", "dateCreated": "", "title":"", "body":"", "text":"", "source":"hiperfolio", "year":""}',
+            help="Columns to extract from JSON or new.",
+
+            #Gooey extra arguments:
+            action="store"
         )
         optional.add_argument(
             "-s",
@@ -143,12 +154,13 @@ def cli():
     
         print("==Variables==")
         print(" > filePath = " + str(args.filePath))
-        print(" > allFolder = " + str(args.allFolder))
+        #print(" > allFolder = " + str(args.allFolder))
         print(" > workFolder = " + str(args.workFolder))
         print(" > mainClass = " + str(args.mainClass))
         print(" > skeleton = " + str(args.skeleton))
         print(" > sentiment = " + str(args.sentiment))
         print(" > sourceLang = " + str(args.sourceLang))
+        print(" > fieldColumns = " + str(args.fieldColumns))
         
         print("\n")
         
@@ -156,12 +168,13 @@ def cli():
 
         
         iterate.Iterate(filePath=args.filePath, 
-        allFolder=args.allFolder, 
+        #allFolder=args.allFolder, 
         workFolder=args.workFolder, 
         mainClass=args.mainClass, 
         skeleton=args.skeleton, 
         sentiment=args.sentiment,
-        sourceLang=args.sourceLang)
+        sourceLang=args.sourceLang,
+        fieldColumns=args.fieldColumns)
         
 if __name__ == "__main__":
     cli()

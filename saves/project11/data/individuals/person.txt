@@ -1,0 +1,39 @@
+
+###  http://sparql.entigraph.di.pt/corpus#person-Andr-_Ventura
+:person-Andr-_Ventura rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Político"^^xsd:string ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/André_Ventura"^^xsd:anyURI ;          
+                      :personName "André Ventura"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Ant-nio_Ventura
+:person-Ant-nio_Ventura rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Político"^^xsd:string ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/António_Ventura_(político)"^^xsd:anyURI ;          
+                      :personName "António Ventura"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Ant-nio_Costa
+:person-Ant-nio_Costa rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Político"^^xsd:string ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/António_Costa"^^xsd:anyURI ;          
+                      :personName "António Costa"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Amigos
+:person-Amigos rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Músico"^^xsd:string ;          
+                      :personName "Amigos"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Pinto_da_Costa
+:person-Pinto_da_Costa rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Empresário"^^xsd:string ;          
+                      :personName "Pinto da Costa"^^xsd:string .
+
+            

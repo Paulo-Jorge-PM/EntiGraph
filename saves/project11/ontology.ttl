@@ -1,0 +1,2296 @@
+@prefix : <http://sparql.entigraph.di.pt/corpus#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://sparql.entigraph.di.pt/corpus> .
+
+<http://sparql.entigraph.di.pt/corpus> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://sparql.entigraph.di.pt/corpus#animalReferedBy
+:animalReferedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :referesAnimal .
+
+
+###  http://sparql.entigraph.di.pt/corpus#articleFrom
+:articleFrom rdf:type owl:ObjectProperty ;
+             owl:inverseOf :hasArticle ;
+             rdf:type owl:FunctionalProperty ;
+             rdfs:domain :Article ;
+             rdfs:range :Newspaper .
+
+
+###  http://sparql.entigraph.di.pt/corpus#belongsTo
+:belongsTo rdf:type owl:ObjectProperty ;
+           owl:inverseOf :minorityHasPerson ;
+           rdfs:domain :Person ;
+           rdfs:range :Minority .
+
+
+###  http://sparql.entigraph.di.pt/corpus#brandReferedBy
+:brandReferedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :referesBrand .
+
+
+###  http://sparql.entigraph.di.pt/corpus#carBrandReferedBy
+:carBrandReferedBy rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :referesCarBrand .
+
+
+###  http://sparql.entigraph.di.pt/corpus#cityInCountry
+:cityInCountry rdf:type owl:ObjectProperty ;
+               owl:inverseOf :countryHasCity ;
+               rdf:type owl:FunctionalProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#cityReferedBy
+:cityReferedBy rdf:type owl:ObjectProperty ;
+               owl:inverseOf :referesCity .
+
+
+###  http://sparql.entigraph.di.pt/corpus#commentIn
+:commentIn rdf:type owl:ObjectProperty ;
+           owl:inverseOf :hasComment ;
+           rdf:type owl:FunctionalProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#continentHasCountry
+:continentHasCountry rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :countryInContinent ;
+                     rdf:type owl:AsymmetricProperty ,
+                              owl:IrreflexiveProperty ;
+                     rdfs:domain :Continent ;
+                     rdfs:range :Country .
+
+
+###  http://sparql.entigraph.di.pt/corpus#continentHasOtherPlace
+:continentHasOtherPlace rdf:type owl:ObjectProperty ;
+                        owl:inverseOf :otherPlaceInContinent ;
+                        rdfs:domain :Continent ;
+                        rdfs:range :OtherPlace .
+
+
+###  http://sparql.entigraph.di.pt/corpus#continetReferedBy
+:continetReferedBy rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :referesContinent .
+
+
+###  http://sparql.entigraph.di.pt/corpus#countryHasCity
+:countryHasCity rdf:type owl:ObjectProperty ,
+                         owl:InverseFunctionalProperty ,
+                         owl:AsymmetricProperty ;
+                rdfs:domain :Country ;
+                rdfs:range :City .
+
+
+###  http://sparql.entigraph.di.pt/corpus#countryInContinent
+:countryInContinent rdf:type owl:ObjectProperty ,
+                             owl:FunctionalProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#countryReferedBy
+:countryReferedBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :referesCountry .
+
+
+###  http://sparql.entigraph.di.pt/corpus#entityReferedBy
+:entityReferedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :referesEntity .
+
+
+###  http://sparql.entigraph.di.pt/corpus#ethnicityReferedBY
+:ethnicityReferedBY rdf:type owl:ObjectProperty ;
+                    owl:inverseOf :referesEthnicity .
+
+
+###  http://sparql.entigraph.di.pt/corpus#hasArticle
+:hasArticle rdf:type owl:ObjectProperty ,
+                     owl:InverseFunctionalProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#hasAuthor
+:hasAuthor rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isAuthorFrom ;
+           rdf:type owl:FunctionalProperty ;
+           rdfs:domain :Article ;
+           rdfs:range :Person .
+
+
+###  http://sparql.entigraph.di.pt/corpus#hasComment
+:hasComment rdf:type owl:ObjectProperty ;
+            rdfs:domain :Article ;
+            rdfs:range :Comment .
+
+
+###  http://sparql.entigraph.di.pt/corpus#hasGender
+:hasGender rdf:type owl:ObjectProperty ;
+           owl:inverseOf :isGenderFrom ;
+           rdfs:domain :Person ;
+           rdfs:range :Gender .
+
+
+###  http://sparql.entigraph.di.pt/corpus#hasImage
+:hasImage rdf:type owl:ObjectProperty ;
+          owl:inverseOf :imageIn ;
+          rdfs:domain :Article ;
+          rdfs:range :Image .
+
+
+###  http://sparql.entigraph.di.pt/corpus#hasJob
+:hasJob rdf:type owl:ObjectProperty ;
+        owl:inverseOf :jobDoneBy ;
+        rdfs:domain :Person ;
+        rdfs:range :Job .
+
+
+###  http://sparql.entigraph.di.pt/corpus#hasPriority
+:hasPriority rdf:type owl:ObjectProperty ;
+             rdfs:domain :Article ;
+             rdfs:range :Priority .
+
+
+###  http://sparql.entigraph.di.pt/corpus#imageIn
+:imageIn rdf:type owl:ObjectProperty ,
+                  owl:FunctionalProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#isAuthorFrom
+:isAuthorFrom rdf:type owl:ObjectProperty ,
+                       owl:InverseFunctionalProperty ;
+              rdfs:domain :Person ;
+              rdfs:range :Article .
+
+
+###  http://sparql.entigraph.di.pt/corpus#isGenderFrom
+:isGenderFrom rdf:type owl:ObjectProperty ,
+                       owl:AsymmetricProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#jobDoneBy
+:jobDoneBy rdf:type owl:ObjectProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#jobReferedBy
+:jobReferedBy rdf:type owl:ObjectProperty ;
+              owl:inverseOf :referesJob .
+
+
+###  http://sparql.entigraph.di.pt/corpus#keywordAssociatedToMinority
+:keywordAssociatedToMinority rdf:type owl:ObjectProperty ;
+                             owl:inverseOf :minorityAssociatedToKeyword .
+
+
+###  http://sparql.entigraph.di.pt/corpus#keywordReferedBy
+:keywordReferedBy rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :referesKeyword .
+
+
+###  http://sparql.entigraph.di.pt/corpus#minorityAssociatedToKeyword
+:minorityAssociatedToKeyword rdf:type owl:ObjectProperty ;
+                             rdfs:domain :Minority ;
+                             rdfs:range :Keyword .
+
+
+###  http://sparql.entigraph.di.pt/corpus#minorityHasPerson
+:minorityHasPerson rdf:type owl:ObjectProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#minorityReferedBy
+:minorityReferedBy rdf:type owl:ObjectProperty ;
+                   owl:inverseOf :referesMinority .
+
+
+###  http://sparql.entigraph.di.pt/corpus#monthReferedBy
+:monthReferedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :referesMonth .
+
+
+###  http://sparql.entigraph.di.pt/corpus#otherPlaceInContinent
+:otherPlaceInContinent rdf:type owl:ObjectProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#otherPlaceReferedBy
+:otherPlaceReferedBy rdf:type owl:ObjectProperty ;
+                     owl:inverseOf :referesOtherPlace .
+
+
+###  http://sparql.entigraph.di.pt/corpus#personReferedBy
+:personReferedBy rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :referesPerson .
+
+
+###  http://sparql.entigraph.di.pt/corpus#placeReferedBy
+:placeReferedBy rdf:type owl:ObjectProperty ;
+                owl:inverseOf :referesPlace .
+
+
+###  http://sparql.entigraph.di.pt/corpus#politicalPartyReferedBy
+:politicalPartyReferedBy rdf:type owl:ObjectProperty ;
+                         owl:inverseOf :referesPoliticalParty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesAnimal
+:referesAnimal rdf:type owl:ObjectProperty ;
+               rdfs:domain :Article ;
+               rdfs:range :Animal .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesBrand
+:referesBrand rdf:type owl:ObjectProperty ;
+              rdfs:domain :Article ;
+              rdfs:range :Brand .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesCarBrand
+:referesCarBrand rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Article ;
+                 rdfs:range :CarBrand .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesCity
+:referesCity rdf:type owl:ObjectProperty ;
+             rdfs:domain :Article ;
+             rdfs:range :City .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesContinent
+:referesContinent rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Article ;
+                  rdfs:range :Continent .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesCountry
+:referesCountry rdf:type owl:ObjectProperty ;
+                rdfs:domain :Article ;
+                rdfs:range :Country .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesEntity
+:referesEntity rdf:type owl:ObjectProperty ;
+               rdfs:domain :Article ;
+               rdfs:range :Entity .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesEthnicity
+:referesEthnicity rdf:type owl:ObjectProperty ;
+                  rdfs:domain :Article ;
+                  rdfs:range :Ethnicity .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesJob
+:referesJob rdf:type owl:ObjectProperty ;
+            rdfs:domain :Article ;
+            rdfs:range :Job .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesKeyword
+:referesKeyword rdf:type owl:ObjectProperty ;
+                rdfs:domain :Article ;
+                rdfs:range :Keyword .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesMinority
+:referesMinority rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Article ;
+                 rdfs:range :Minority .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesMonth
+:referesMonth rdf:type owl:ObjectProperty ;
+              rdfs:domain :Article ;
+              rdfs:range :Month .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesOtherPlace
+:referesOtherPlace rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Article ;
+                   rdfs:range :OtherPlace .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesPerson
+:referesPerson rdf:type owl:ObjectProperty ;
+               rdfs:domain :Article ;
+               rdfs:range :Person .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesPlace
+:referesPlace rdf:type owl:ObjectProperty ;
+              rdfs:domain :Article ;
+              rdfs:range :Place .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesPoliticalParty
+:referesPoliticalParty rdf:type owl:ObjectProperty ;
+                       rdfs:domain :Article ;
+                       rdfs:range :PoliticalParty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesReligion
+:referesReligion rdf:type owl:ObjectProperty ;
+                 owl:inverseOf :religionReferedBy ;
+                 rdfs:domain :Article ;
+                 rdfs:range :Religion .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesSport
+:referesSport rdf:type owl:ObjectProperty ;
+              owl:inverseOf :sportReferedBy ;
+              rdfs:domain :Article ;
+              rdfs:range :Sport .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesTag
+:referesTag rdf:type owl:ObjectProperty ;
+            owl:inverseOf :tagReferedBy ;
+            rdfs:domain :Article ;
+            rdfs:range :Tag .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesTime
+:referesTime rdf:type owl:ObjectProperty ;
+             owl:inverseOf :timeReferedBy ;
+             rdfs:domain :Article ;
+             rdfs:range :Time .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesTvChannel
+:referesTvChannel rdf:type owl:ObjectProperty ;
+                  owl:inverseOf :tvChannelReferedBy ;
+                  rdfs:domain :Article ;
+                  rdfs:range :TvChannel .
+
+
+###  http://sparql.entigraph.di.pt/corpus#referesWeek
+:referesWeek rdf:type owl:ObjectProperty ;
+             owl:inverseOf :weekReferedBy ;
+             rdfs:domain :Article ;
+             rdfs:range :Weekday .
+
+
+###  http://sparql.entigraph.di.pt/corpus#religionReferedBy
+:religionReferedBy rdf:type owl:ObjectProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#sportReferedBy
+:sportReferedBy rdf:type owl:ObjectProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#tagReferedBy
+:tagReferedBy rdf:type owl:ObjectProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#timeReferedBy
+:timeReferedBy rdf:type owl:ObjectProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#tvChannelReferedBy
+:tvChannelReferedBy rdf:type owl:ObjectProperty .
+
+
+###  http://sparql.entigraph.di.pt/corpus#weekReferedBy
+:weekReferedBy rdf:type owl:ObjectProperty .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://sparql.entigraph.di.pt/corpus#animal
+:animal rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Animal ;
+        rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#brand
+:brand rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Brand ;
+       rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#carBrand
+:carBrand rdf:type owl:DatatypeProperty ;
+          rdfs:domain :CarBrand ;
+          rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#city
+:city rdf:type owl:DatatypeProperty ;
+      rdfs:domain :City ;
+      rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#comment
+:comment rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Comment ;
+         rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#commentDate
+:commentDate rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Comment ;
+             rdfs:range xsd:dateTime .
+
+
+###  http://sparql.entigraph.di.pt/corpus#continent
+:continent rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Continent ;
+           rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#country
+:country rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Country ;
+         rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#dataPub
+:dataPub rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Article ;
+         rdfs:range xsd:dateTime .
+
+
+###  http://sparql.entigraph.di.pt/corpus#dateBirth
+:dateBirth rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:dateTime .
+
+
+###  http://sparql.entigraph.di.pt/corpus#entity
+:entity rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Entity ;
+        rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#ethnicity
+:ethnicity rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Ethnicity ;
+           rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#fileName
+:fileName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Article ;
+          rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#gender
+:gender rdf:type owl:DatatypeProperty ;
+        rdfs:domain :Gender ,
+                    :Person ;
+        rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#imageFileName
+:imageFileName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Image ;
+               rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#imageLink
+:imageLink rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Image ;
+           rdfs:range xsd:anyURI .
+
+
+###  http://sparql.entigraph.di.pt/corpus#job
+:job rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Job ;
+     rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#keyword
+:keyword rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Keyword ;
+         rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#link
+:link rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Article ;
+      rdfs:range xsd:anyURI .
+
+
+###  http://sparql.entigraph.di.pt/corpus#minority
+:minority rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Minority ;
+          rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#month
+:month rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Month ;
+       rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#newspaperHomepage
+:newspaperHomepage rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Newspaper ;
+                   rdfs:range xsd:anyURI .
+
+
+###  http://sparql.entigraph.di.pt/corpus#newspaperName
+:newspaperName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Newspaper ;
+               rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#otherPlace
+:otherPlace rdf:type owl:DatatypeProperty ;
+            rdfs:domain :OtherPlace ;
+            rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#personName
+:personName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Person ;
+            rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#politicalParty
+:politicalParty rdf:type owl:DatatypeProperty ;
+                rdfs:domain :PoliticalParty ;
+                rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#preview
+:preview rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Article ;
+         rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#priority
+:priority rdf:type owl:DatatypeProperty ;
+          rdfs:subPropertyOf owl:topDataProperty ;
+          rdfs:domain :Minority ;
+          rdfs:range xsd:integer .
+
+
+###  http://sparql.entigraph.di.pt/corpus#religion
+:religion rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Religion ;
+          rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#sentimentAnalysis
+:sentimentAnalysis rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :Article ;
+                   rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#sport
+:sport rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Sport ;
+       rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#subTittle
+:subTittle rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Article ;
+           rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#tag
+:tag rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Tag ;
+     rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#text
+:text rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Article ;
+      rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Article ;
+       rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#tvChannel
+:tvChannel rdf:type owl:DatatypeProperty ;
+           rdfs:domain :TvChannel ;
+           rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#weekday
+:weekday rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Weekday ;
+         rdfs:range xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#wikiPage
+:wikiPage rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Person ;
+          rdfs:range xsd:anyURI .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://sparql.entigraph.di.pt/corpus#Animal
+:Animal rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Article
+:Article rdf:type owl:Class ;
+         rdfs:subClassOf [ rdf:type owl:Restriction ;
+                           owl:onProperty :title ;
+                           owl:someValuesFrom xsd:string
+                         ] .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Author
+:Author rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Person
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :isAuthorFrom ;
+                                                     owl:someValuesFrom :Article
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :Person .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Brand
+:Brand rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#CarBrand
+:CarBrand rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#City
+:City rdf:type owl:Class ;
+      rdfs:subClassOf :Place .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Comment
+:Comment rdf:type owl:Class ;
+         rdfs:subClassOf :Article .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Continent
+:Continent rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Restriction ;
+                                 owl:onProperty :continent ;
+                                 owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                      owl:oneOf [ rdf:type rdf:List ;
+                                                                  rdf:first "América" ;
+                                                                  rdf:rest [ rdf:type rdf:List ;
+                                                                             rdf:first "Antártida" ;
+                                                                             rdf:rest [ rdf:type rdf:List ;
+                                                                                        rdf:first "Europa" ;
+                                                                                        rdf:rest [ rdf:type rdf:List ;
+                                                                                                   rdf:first "Oceania" ;
+                                                                                                   rdf:rest [ rdf:type rdf:List ;
+                                                                                                              rdf:first "África" ;
+                                                                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                                                                         rdf:first "Ásia" ;
+                                                                                                                         rdf:rest rdf:nil
+                                                                                                                       ]
+                                                                                                            ]
+                                                                                                 ]
+                                                                                      ]
+                                                                           ]
+                                                                ]
+                                                    ]
+                               ] ;
+           rdfs:subClassOf :Place .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Country
+:Country rdf:type owl:Class ;
+         rdfs:subClassOf :Place .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Entity
+:Entity rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Ethnicity
+:Ethnicity rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Gender
+:Gender rdf:type owl:Class ;
+        owl:equivalentClass [ owl:intersectionOf ( :Person
+                                                   [ rdf:type owl:Restriction ;
+                                                     owl:onProperty :hasGender ;
+                                                     owl:someValuesFrom [ rdf:type owl:Class ;
+                                                                          owl:unionOf ( :GenderFeminine
+                                                                                        :GenderMasculine
+                                                                                        :GenderOther
+                                                                                      )
+                                                                        ]
+                                                   ]
+                                                 ) ;
+                              rdf:type owl:Class
+                            ] ;
+        rdfs:subClassOf :Person .
+
+
+###  http://sparql.entigraph.di.pt/corpus#GenderFeminine
+:GenderFeminine rdf:type owl:Class ;
+                owl:equivalentClass [ owl:intersectionOf ( :Gender
+                                                           [ rdf:type owl:Restriction ;
+                                                             owl:onProperty :hasGender ;
+                                                             owl:someValuesFrom :GenderFeminine
+                                                           ]
+                                                         ) ;
+                                      rdf:type owl:Class
+                                    ] ;
+                rdfs:subClassOf :Gender ;
+                owl:disjointWith :GenderMasculine .
+
+
+###  http://sparql.entigraph.di.pt/corpus#GenderMasculine
+:GenderMasculine rdf:type owl:Class ;
+                 owl:equivalentClass [ owl:intersectionOf ( :Gender
+                                                            [ rdf:type owl:Restriction ;
+                                                              owl:onProperty :hasGender ;
+                                                              owl:someValuesFrom :GenderMasculine
+                                                            ]
+                                                          ) ;
+                                       rdf:type owl:Class
+                                     ] ;
+                 rdfs:subClassOf :Gender .
+
+
+###  http://sparql.entigraph.di.pt/corpus#GenderOther
+:GenderOther rdf:type owl:Class ;
+             owl:equivalentClass [ owl:intersectionOf ( :Gender
+                                                        [ rdf:type owl:Restriction ;
+                                                          owl:onProperty :hasGender ;
+                                                          owl:someValuesFrom :GenderOther
+                                                        ]
+                                                      ) ;
+                                   rdf:type owl:Class
+                                 ] ;
+             rdfs:subClassOf :Gender .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Image
+:Image rdf:type owl:Class ;
+       rdfs:subClassOf :Article .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Job
+:Job rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Keyword
+:Keyword rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Minority
+:Minority rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Month
+:Month rdf:type owl:Class ;
+       owl:equivalentClass [ rdf:type owl:Restriction ;
+                             owl:onProperty :month ;
+                             owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                  owl:oneOf [ rdf:type rdf:List ;
+                                                              rdf:first "Abril" ;
+                                                              rdf:rest [ rdf:type rdf:List ;
+                                                                         rdf:first "Agosto" ;
+                                                                         rdf:rest [ rdf:type rdf:List ;
+                                                                                    rdf:first "Dezembro" ;
+                                                                                    rdf:rest [ rdf:type rdf:List ;
+                                                                                               rdf:first "Fevereiro" ;
+                                                                                               rdf:rest [ rdf:type rdf:List ;
+                                                                                                          rdf:first "Janeiro" ;
+                                                                                                          rdf:rest [ rdf:type rdf:List ;
+                                                                                                                     rdf:first "Julho" ;
+                                                                                                                     rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                rdf:first "Junho" ;
+                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                           rdf:first "Maio" ;
+                                                                                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                      rdf:first "Março" ;
+                                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                 rdf:first "Novembro" ;
+                                                                                                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                            rdf:first "Outubro" ;
+                                                                                                                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                       rdf:first "Setembro" ;
+                                                                                                                                                                                       rdf:rest rdf:nil
+                                                                                                                                                                                     ]
+                                                                                                                                                                          ]
+                                                                                                                                                               ]
+                                                                                                                                                    ]
+                                                                                                                                         ]
+                                                                                                                              ]
+                                                                                                                   ]
+                                                                                                        ]
+                                                                                             ]
+                                                                                  ]
+                                                                       ]
+                                                            ]
+                                                ]
+                           ] ;
+       rdfs:subClassOf :Time .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Newspaper
+:Newspaper rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#OtherPlace
+:OtherPlace rdf:type owl:Class ;
+            rdfs:subClassOf :Place .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Person
+:Person rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Place
+:Place rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#PoliticalParty
+:PoliticalParty rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Priority
+:Priority rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Religion
+:Religion rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Sport
+:Sport rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Tag
+:Tag rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Time
+:Time rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#TvChannel
+:TvChannel rdf:type owl:Class .
+
+
+###  http://sparql.entigraph.di.pt/corpus#Weekday
+:Weekday rdf:type owl:Class ;
+         owl:equivalentClass [ rdf:type owl:Restriction ;
+                               owl:onProperty :weekday ;
+                               owl:someValuesFrom [ rdf:type rdfs:Datatype ;
+                                                    owl:oneOf [ rdf:type rdf:List ;
+                                                                rdf:first "domingo" ;
+                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                           rdf:first "quarta-feira" ;
+                                                                           rdf:rest [ rdf:type rdf:List ;
+                                                                                      rdf:first "quinta-feira" ;
+                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                 rdf:first "segunda-feira" ;
+                                                                                                 rdf:rest [ rdf:type rdf:List ;
+                                                                                                            rdf:first "sexta-feira" ;
+                                                                                                            rdf:rest [ rdf:type rdf:List ;
+                                                                                                                       rdf:first "sábado" ;
+                                                                                                                       rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                  rdf:first "terça-feira" ;
+                                                                                                                                  rdf:rest rdf:nil
+                                                                                                                                ]
+                                                                                                                     ]
+                                                                                                          ]
+                                                                                               ]
+                                                                                    ]
+                                                                         ]
+                                                              ]
+                                                  ]
+                             ] ;
+         rdfs:subClassOf :Time .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+
+
+
+###  http://sparql.entigraph.di.pt/corpus#city-Porto
+:city-Porto rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city "Porto"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#city-Guimar-es
+:city-Guimar-es rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city "Guimarães"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#city-Lisboa
+:city-Lisboa rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city "Lisboa"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#animal-c-o
+:animal-c-o rdf:type owl:NamedIndividual ,
+                 :Animal ;
+        :animal "cão"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#animal-rato
+:animal-rato rdf:type owl:NamedIndividual ,
+                 :Animal ;
+        :animal "rato"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#animal-macaco
+:animal-macaco rdf:type owl:NamedIndividual ,
+                 :Animal ;
+        :animal "macaco"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#continent-Europa
+:continent-Europa rdf:type owl:NamedIndividual ,
+                 :Continent ;
+        :continent "Europa"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-racismo
+:keyword-racismo rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "racismo"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-fome
+:keyword-fome rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "fome"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-ataque
+:keyword-ataque rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "ataque"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-racista
+:keyword-racista rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "racista"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-vergonha
+:keyword-vergonha rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "vergonha"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-c-o
+:keyword-c-o rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "cão"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-pobreza
+:keyword-pobreza rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "pobreza"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-homem
+:keyword-homem rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "homem"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-viol-ncia
+:keyword-viol-ncia rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "violência"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-guerra
+:keyword-guerra rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "guerra"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-campo
+:keyword-campo rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "campo"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-lei
+:keyword-lei rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "lei"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-medo
+:keyword-medo rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "medo"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-social
+:keyword-social rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "social"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-crime
+:keyword-crime rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "crime"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-negra
+:keyword-negra rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "negra"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-educa--o
+:keyword-educa--o rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "educação"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-direitos
+:keyword-direitos rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "direitos"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#country-Portugal
+:country-Portugal rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :country "Portugal"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#country-Jamaica
+:country-Jamaica rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :country "Jamaica"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#country--ndia
+:country--ndia rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :country "Índia"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#sport-Futebol
+:sport-Futebol rdf:type owl:NamedIndividual ,
+                 :Sport ;
+        :sport "Futebol"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#politicalParty-BE
+:politicalParty-BE rdf:type owl:NamedIndividual ,
+                 :PoliticalParty ;
+        :politicalParty "BE"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#politicalParty-PS
+:politicalParty-PS rdf:type owl:NamedIndividual ,
+                 :PoliticalParty ;
+        :politicalParty "PS"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#politicalParty-CHEGA
+:politicalParty-CHEGA rdf:type owl:NamedIndividual ,
+                 :PoliticalParty ;
+        :politicalParty "CHEGA"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#politicalParty-PSD
+:politicalParty-PSD rdf:type owl:NamedIndividual ,
+                 :PoliticalParty ;
+        :politicalParty "PSD"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#politicalParty-CDS
+:politicalParty-CDS rdf:type owl:NamedIndividual ,
+                 :PoliticalParty ;
+        :politicalParty "CDS"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Andr-_Ventura
+:person-Andr-_Ventura rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Político"^^xsd:string ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/André_Ventura"^^xsd:anyURI ;          
+                      :personName "André Ventura"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Ant-nio_Ventura
+:person-Ant-nio_Ventura rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Político"^^xsd:string ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/António_Ventura_(político)"^^xsd:anyURI ;          
+                      :personName "António Ventura"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Ant-nio_Costa
+:person-Ant-nio_Costa rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Político"^^xsd:string ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/António_Costa"^^xsd:anyURI ;          
+                      :personName "António Costa"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Amigos
+:person-Amigos rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Músico"^^xsd:string ;          
+                      :personName "Amigos"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#person-Pinto_da_Costa
+:person-Pinto_da_Costa rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Empresário"^^xsd:string ;          
+                      :personName "Pinto da Costa"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#article-4802458859
+:article-4802458859 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ,
+                        :keyword-fome ;
+           :id """4802458859"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_Aviador"""^^xsd:string ;
+            
+           :text """A Esquerdalha das Esganiçadas com ânsia e fome de poder criou este tema já alguns anos atrás para ganhar votos. Dividir para reinar. Na altura poderia ter dado resultado mas JÁ COMEÇAM A EXAGERAR. HOJE TUDO É <b> RACISMO!</b>
+Dasse.
+Vai acontecer o contrário daquilo que queriam. Os tugas já estão cansados DESTA CONVERSA DE UM SÓ SENTIDO!"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.040000000000000015"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4802233339
+:article-4802233339 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-ataque ;
+           :id """4802233339"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_yznlqTO3Sh"""^^xsd:string ;
+            
+           :text """ATAQUE DE COVID-19 ...OLHA O CORONA VIRUS DA SOCIEDADE PORTUGUESA AI GENTEEEEE....!!!!"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4800160428
+:article-4800160428 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racista ;
+           :id """4800160428"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_eXa2j6gcGy"""^^xsd:string ;
+            
+           :text """Se essa critica ao Costa é ser <b> racista,</b> então eu sou também<b>  racista</b>."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799433604
+:article-4799433604 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4799433604"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_lU8uYlB2Z2"""^^xsd:string ;
+            
+           :text """FORÇA VENTURA A ESQUERDA FACISTA TREME TODA...."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799431615
+:article-4799431615 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-vergonha ,
+                        :keyword-c-o ,
+                        :keyword-racista ;
+                   :referesAnimal 
+                        :animal-c-o ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesPerson 
+                        :person-Andr-_Ventura ;
+           :id """4799431615"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_xmCBjS9tbD"""^^xsd:string ;
+            
+           :text """É triste, hoje, em pleno 2020, Portugal ter constatado que estruturalmente continua a ser, sim, um país <b> racista.</b><br/>Aliás, muitos comentários que aqui se podem ler, assim o indiciam. <br/>Provam o que hipocritamente (aqui sim, a definição de hipocrisia faz sentido), se vê no dia a dia.<br/>Somos tão generosos, tão simpáticos e com uma alma tão grande para umas coisas e tão pequeninos, tão mesquinhos e tão ignorantes para outras.<br/>O André Ventura que vá dar banho ao cão, porque ainda tem que caminhar muitas vidas para um dia ser considerado um exemplo (bom, entenda-se) em termos sociais, humanitários, o que ser que seja neste âmbito.<br/>VERGONHA DE GENTE !!!!!!!!"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.074880195386482"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799413709
+:article-4799413709 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4799413709"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """maciejhermann"""^^xsd:string ;
+            
+           :text """Bravo . O Chega tem o meu voto"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799380993
+:article-4799380993 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ,
+                        :keyword-racista ;
+           :id """4799380993"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """filipaconrado"""^^xsd:string ;
+            
+           :text """Não se indigna, não lamenta e não condena. E ainda chama \"hipócritas\" a quem o faz.<br/>Não só manda pessoas \"para a sua terra\" como também lhe são indiferentes situações de manifesto <b> racismo </b>que mereceram uma justa condenação por parte da esmagadora maioria do país e do mundo. <br/>Posto isto, nada mais há a acrescentar. <br/>É um<b>  racista</b> send<b> o racist</b>a e um fascista sendo fascista.<br/>Devemos indignar-os com as suas palavras mas não nos admirarmos, pois vindo dele já não se espera nada que não seja o assumir de <b> um racis</b>mo comprovado e recorrente.<<b> br/>Raci</b>smo esse que não vingará. <br/>Fascismo esse que não passará."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.134375"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799375956
+:article-4799375956 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4799375956"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """partisanlx"""^^xsd:string ;
+            
+           :text """Ó Ventura já se percebeu que para além de oportunista, ficas mal na figura com o teu fanatismo primário no desporto ...
+(Nota: sou do Benfica)"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.1499999999999999"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799357331
+:article-4799357331 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesCountry 
+                        :country-Jamaica ;
+           :id """4799357331"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """joocalca"""^^xsd:string ;
+            
+           :text """Costa a fazer aproveitamento??? Não??? não sei porque tinha de comentar este caso, mas quando lhe perguntaram sobre o bairro jamaica respondeu se lhe perguntavam isso por causa do tom de pele... enfim, se isto não é  a hipocrisia politica que nos governa, então não sei..."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799269872
+:article-4799269872 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-pobreza ;
+           :id """4799269872"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_wCq48CJRH7"""^^xsd:string ;
+            
+           :text """forças policias a viverem a baixo da pobreza , isso é que me preocupa"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799237110
+:article-4799237110 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesPerson 
+                        :person-Andr-_Ventura ;
+           :id """4799237110"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_BHz3qEk2qL"""^^xsd:string ;
+            
+           :text """André Ventura defeca pela boca."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.1"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799183659
+:article-4799183659 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-homem ;
+           :id """4799183659"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_pEiNLdn5gu"""^^xsd:string ;
+            
+           :text """Ouçam bem este homem a falar de hipocrisia... ele é expert no tema, e não porque o tenha estudado, mas, porque ele o exercita todos os dias!"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.15416666666666667"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799113609
+:article-4799113609 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesPerson 
+                        :person-Andr-_Ventura ;
+           :id """4799113609"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_xmCBjS9tbD"""^^xsd:string ;
+            
+           :text """Se dúvidas houvessem....este André Ventura só pode ser acéfalo, mas que raio de afirmações são estas?<br/>A mensagem do primeiro ministro foi exemplar, só peca por ter que ser enviada em 2020, altura em que o mundo é tão evoluído  numas coisas, mas continua tão estupidamente primitivo em outras."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.04999999999999999"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4799005302
+:article-4799005302 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ,
+                        :keyword-viol-ncia ,
+                        :keyword-guerra ,
+                        :keyword-campo ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :id """4799005302"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """fdefranciscoscarneiro"""^^xsd:string ;
+            
+           :text """Condeno qualquer tipo de violência, seja de que forma, contexto, conteúdo, seja como for.<br/>Lamento o que aconteceu ontem no estádio do Vitória. É de condenar a atitude e ofensas racistas dos adeptos, mas também, a reacção do Marega. O jogador não teve elevação, respondeu a uns insultos, com outros!! Lamentável e condenável, adeptos e Marega.<br/>Todas as reações que se têm promovido são hipócritas e vergonhosas. O aproveitamento deste caso está a ser miserável.<br/>Infelizmente, por esses estádios fora, há violência gratuita... seja contra brancos, ou de cor. É violência verbal, é violência física, os jogadores e árbitros são enxovalhados, são gozados, são alvo de miseráveis impropérios!! Alguém faz eco?? Fazem ou resolvem alguma coisa?? <br/>O APROVEITAMENTO POLÍTICO ESTÁ A SER EXECRÁVEL, VERGONHOSO.<br/>Portugal está mergulhado em hipocrisia, falta de princípios e de valores. Não é de agora! <br/>Qualquer tipo de violência tem de ser ERRADICADA. <br/>O desporto é um espectáculo para as famílias, para se divertirem. Não faz qualquer sentido a guerra que se tem promovido. Por mim, acabava com as claques.<br/>Quanto á reação do Marega, vamos estar atentos... sempre que proferir impropérios contra árbitros, jogadores adversários, ou seja lá o que for, quero ver se o jogo irá parar ou se vão sair de campo. O <b> racismo </b>não é a única forma de violência que existe, infelizmente!"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.1568181818181818"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798942448
+:article-4798942448 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ,
+                        :keyword-lei ;
+                   :referesContinent 
+                        :continent-Europa ;
+                   :referesPerson 
+                        :person-Ant-nio_Ventura ,
+                        :person-Ant-nio_Costa ;
+           :id """4798942448"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """quimcosta"""^^xsd:string ;
+            
+           :text """Apesar de não me rever em António Ventura ele tem razão em grande parte do que diz.<br/>António Costa e o Selfies ficam indignados com o \"<b> racismo\"</b> de alguém ter chamado nomes a um<b>  preto</b>, mas ficaram mudos e quedos quando o<b>  \"racism</b>o\" agrediu brutalmente um motorista de autocarro por o mesmo estar a cumprir o seu dever de cumprimento da lei.<br/>Esta hipocrisia dos nossos governantes é que faz crescer os movimentos extremistas tanto de direita como de esquerda. Os \"Venturas\" da Europa estão a ser criados pelos dirigentes políticos que se alhearam completamente dos problemas reais do povo, passando a discutir apenas os problemas marginais da sociedade, como ideologia <b> de géne</b>ro, eutanás<b> ia, raci</b><b> smo. xenof</b>obia, etc, e catalogando todos os que pensam fora da caixa como nazis, fascistas, xenófabos, islamofóbicos, etc, etc, etc<br/>Quanto mais criticam Ventura, mais ele crescerá. Depois queixem-se!!!"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0631171218487395"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798928205
+:article-4798928205 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :id """4798928205"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_cBccy1PhIj"""^^xsd:string ;
+            
+           :text """Para o  1 ministro, em Portugal existem portugueses de primeira e portugueses de segunda, não é nada pessoal, normalmente tem haver com quem dá mais votos.
+Um primeiro ministro que não serve um País mas grupos dentro de um País."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.08333333333333333"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798925054
+:article-4798925054 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ;
+                   :referesPerson 
+                        :person-Andr-_Ventura ;
+           :id """4798925054"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """o_critico"""^^xsd:string ;
+            
+           :text """Mais uma vez André Ventura 100% cheio de razão... É infeliz o <b> racismo,</b> mas quem o tem criado, Joacine, Mamdor BEsta, depois o ódio se cria onde não existia..."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.2571428571428572"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798924615
+:article-4798924615 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-medo ,
+                        :keyword-vergonha ,
+                        :keyword-social ;
+                   :referesAnimal 
+                        :animal-rato ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ;
+           :id """4798924615"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_AH69Zctpuj"""^^xsd:string ;
+            
+           :text """Ventura denuncia sem medo os casos em que o primeiro ministro preferiu ficar caladinho que nem um rato para não incomodar a extrema esquerda e não perder votos. Isto só mostra e denuncia a baixeza e falta de estatura moral deste 1º ministro que só quer se manter no poder a todo o custo e já nos levou para o fundo dos países europeus em crescimento medido pelo PIB per capita,  contrariamente ao que diz a propaganda diária desta comunicação social acéfala e vendida à geringonça. Se querem mais um exemplo da baixeza e e falta de vergonha deste 1º ministro temos a aprovação do OE pela extrema esquerda BE, em troca de colocar à pressa e sem discussão parlamentar  a aprovação da Eutanasia. Vergonhoso"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.031818181818181815"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798921778
+:article-4798921778 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798921778"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """uporrabranco"""^^xsd:string ;
+            
+           :text """Chega ventura , sempre"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.7"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798920507
+:article-4798920507 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-crime ,
+                        :keyword-viol-ncia ;
+           :id """4798920507"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_VoMCyeRe8d"""^^xsd:string ;
+            
+           :text """Engraçado os pesos e medidas deste país: violência gratuita contra crianças e pessoas vulneráveis não é grave nem crime desde que brancas 🤔🤔🤔 Quando se toca em cores aí tudo vira crime e polémica 😤😤😤 Realmente é melhor viver entre animais 🤔🤔🤔"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.06212121212121212"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798919566
+:article-4798919566 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesPerson 
+                        :person-Amigos ;
+           :id """4798919566"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_sLE8aKZ3fk"""^^xsd:string ;
+            
+           :text """O Costa gosta de estar bem com Deus e com o Diabo. Marcelo é exactamente igual, não fossem eles políticos... quem não os conhece... eles não estão preocupados com as pessoas... fingem... e quando certos \"valores\" se levantam... meus amigos... viram feras... mesmo que não acreditem no que dizem... eles são os DITADORES do \"POLITICAMENTE CORRETO\" que como sabemos está muito longe da verdade dos factos..."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.176"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798918903
+:article-4798918903 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ,
+                        :keyword-crime ;
+           :id """4798918903"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """aquelequeestafartodedemagogia"""^^xsd:string ;
+            
+           :text """Já paravam de dar mediatismo a este anormal!!!
+O que aconteceu foi muito grave por vários motivos, 1º porque foi num evento desportivo e o desporto deve unir e não ser palco de <b> racismo,</b> 2º por estar a ser feito em público, ou seja, uma cisa é um anormal vir mandar uns bitaites na net, outra coisa é uma manifestação pública de<b>  racismo</b> que a nossa constituição proibe e considera crime!!!
+Este anormal deste Ventura, que não disfarça o se<b> u racism</b>o, e deveria ter mais respeito pela nossa constituição, pois é graças a ela que neste momento é o que é..."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.03523809523809524"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798916038
+:article-4798916038 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ;
+           :id """4798916038"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_sLE8aKZ3fk"""^^xsd:string ;
+            
+           :text """Só os racistas reconhecem verdadeiramente o que é o <b> racismo.</b>.."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798914941
+:article-4798914941 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ,
+                        :keyword-negra ,
+                        :keyword-campo ;
+                   :referesSport 
+                        :sport-Futebol ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :id """4798914941"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """discus_EGJS"""^^xsd:string ;
+            
+           :text """O problema mesmo é que o futebol está cada vez mais transformado num campo de batalha em que tudo serve para atacar a equipa rival. O Marega foi atacado da forma mais básica porque tem cor <b> negra,</b> mas a cor em si não tem importância nenhuma para os energúmenos que vão ao futebol para provocar actos violentos. António Costa exprimiu-se contra manifestações de<b>  racismo</b>, o que é correcto e, pelos vistos, em palavras, Ventura concorda com Costa. Só que Ventura quer dizer que o que parece não é, mas isso compete exclusivamente aos órgãos próprios avaliar."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.024999999999999984"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798914687
+:article-4798914687 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-medo ,
+                        :keyword-racista ;
+                   :referesPoliticalParty 
+                        :politicalParty-BE ,
+                        :politicalParty-PS ,
+                        :politicalParty-CHEGA ;
+           :id """4798914687"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_AH69Zctpuj"""^^xsd:string ;
+            
+           :text """Mais uma vez Ventura diz sem medo o que muitos têm medo de dizer.  E para quem o acusa de <b> nazi </b>e<b>  racista</b> até agora Ventura defendeu sempre que correria com racistas e nazistas que se quisessem infiltrar no CHEGA. O mesmo já não se pode dizer do PS, com os infiltrados extremistas do BE que agora mandam no PS."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.024999999999999994"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798913292
+:article-4798913292 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-educa--o ,
+                        :keyword-direitos ;
+                   :referesPoliticalParty 
+                        :politicalParty-PSD ,
+                        :politicalParty-CDS ;
+           :id """4798913292"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """relvas_analytics"""^^xsd:string ;
+            
+           :text """...a única coisa que realmente é novidade é o <b> idiota </b>do Ventura estar a alargar o seu discurso populista de vitimização aos professores, gente que ele odeia e que considera parasitas. Obviamente que toda a gente já topou (e o Ventura não é exceção) que o Mário Nogueira amansou e baixou a intensidade da luta pela reposição dos direitos roubados aos professores, os últimos 5 anos foram de cedências impensáveis por parte da FENPROF ao governo e ao seu \"desaparecido\" Ministro da Educação. A continuar assim é uma porta aberta para a extrema direita entrar por ali fora ...até porque uma parte substancial dos professores são apoiantes do PSD e CDS e neste momento estão órfãos."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.044119769119769114"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798911488
+:article-4798911488 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesCity 
+                        :city-Porto ;
+           :id """4798911488"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """Disqusmanuelgomes"""^^xsd:string ;
+            
+           :text """Vou me embora , mas antes digo isto : caso Marega promove Porto a campeão ."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.25"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798910827
+:article-4798910827 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racismo ;
+                   :referesPerson 
+                        :person-Andr-_Ventura ;
+           :id """4798910827"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_ydT3HwMAoR"""^^xsd:string ;
+            
+           :text """Concordo com André ventura pior que o <b> racismo </b>é a hipocrisia de algumas pessoas. não se sabe ao certo se são ou não a favor do verdadeiro<b>  racismo</b>."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.15"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798910228
+:article-4798910228 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798910228"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """alveslopes"""^^xsd:string ;
+            
+           :text """Estavas a ir tão bem... e estragaste tudo.....<br/>independentemente de haver quem possa aproveitar estas questões para outros campeonatos....<br/>Não tem discussão...deve ter sido do pior para uma pessoa chegar ao ponto de sentir uma vontade inamovível de desistir do jogo...<br/>(já vi na TV jornalistas que estiveram presentes no estádio e que afirmaram que foi inadmissível o que se passou e que se ouvia muito bem e que esses grunhidos foram emitidos por muita gente que estava lá ..)"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.085"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798909203
+:article-4798909203 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798909203"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """Disqusmanuelgomes"""^^xsd:string ;
+            
+           :text """Pela assembleia não pode interpelar o Costa sobre isso .
+Senão a pergunta inconveniente usa como defesa a côr e diz :
+\" essa pergunta têm a ver com a minha côr da pele ..\" 😳"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.6"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798908403
+:article-4798908403 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798908403"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """desprezo_carnides"""^^xsd:string ;
+            
+           :text """Este inergumeno do Ventura só tem razão numa coisa. A falta de apoio e solidariedade por parte do estado e do Presidente, às forças de segurança, médicos e professores agredidos."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.14285714285714285"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798907116
+:article-4798907116 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798907116"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_EJLoQqNK0r"""^^xsd:string ;
+            
+           :text """Basta ler esta caixa de comentários, para se perceber os racistas que estão a sair das tocas, escudados neste zequinha do ventura que é um menino bem que vem das jotas... #vergonhaéserracista"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798905036
+:article-4798905036 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesCity 
+                        :city-Porto ;
+                   :referesPerson 
+                        :person-Pinto_da_Costa ;
+           :id """4798905036"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """Disqusmanuelgomes"""^^xsd:string ;
+            
+           :text """E,assim Porto ganhou três pontos e com esta onda é campeão .
+E, não entendem que no subconsciente dos adeptos utilizando ferramentas para desmoralização do goleador porque outros de côr existem em ambas equipas foi vitima o goleador .
+Mas pelo norte nestas equipas menores alem serem adeptos dos clubes da terra são também adeptos do Benfica e Porto .
+Penso que ao insultar o goleador para o desmotivar , até ajudaram o Porto pelas cenas a fuçar com três pontos .
+Pinto da Costa esfrega as mãos de contente até veio a convir a onda .
+Assim Porto pela onda sobre pode ser campeão . E, não se apercebem disso . Grande golpe de marega"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.039999999999999994"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798904812
+:article-4798904812 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racista ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :id """4798904812"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_qjGrG6hxKV"""^^xsd:string ;
+            
+           :text """que fez  ele antes?  provocou   o  povo   os adeptos  fazem  e dizem tudo  pelo seu clube  ..  quem semeia ventos colhe tempestades..   agora  já tudo ama os pretos até  mesmo aqueles que mataram  um puto  de 24 anos  hoje são adorados  que  é preciso  é que mundo  diga  portugal   não é <b> racista </b> MAS É....."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.0888888888888889"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798904440
+:article-4798904440 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesCountry 
+                        :country--ndia ;
+           :id """4798904440"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """nobreportugues"""^^xsd:string ;
+            
+           :text """O <b> ama<b> relo </b</b>>bem que podia voltar para a Índia.. É um hipócrita.. Quando ocorreram os ataques aos médicos, professores e à polícia não disse nada manteve se no silêncio.. Hipócrita!!"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798902535
+:article-4798902535 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :id """4798902535"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_mbgU5ErDSS"""^^xsd:string ;
+            
+           :text """Deveria correr-se com os brancos de Portugal, fazem a vida num inferno aos pretos, malditos brancos."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798900678
+:article-4798900678 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798900678"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_EJLoQqNK0r"""^^xsd:string ;
+            
+           :text """Este rapazola é uma marioneta ao serviço dos verdadeiros racistas que o vão usar e abusar! Basta ver as caixas de comentários, para se perceber que esses racistas estão a sair das tocas, e usam este zequinha para atingir os seus objectivos! #vergonhaéserracista"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0062500000000000056"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798892338
+:article-4798892338 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesCity 
+                        :city-Guimar-es ,
+                        :city-Lisboa ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesPerson 
+                        :person-Andr-_Ventura ;
+           :id """4798892338"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """Antiraoliono"""^^xsd:string ;
+            
+           :text """André ventura e 2 milhões de apoiantes estarão em Guimarães, amanhã pelas 21:45 para apoiar a claque alvinegra pela difamação provocada pelo governo a pessoas que fazem 444444444 vezes mais por Portugal do que os partidos de esquerda.<br/>Para a vitória, vota Ventura!!! O único <b> NAZI </b>em Portugal que irá colocar o país na ordem ao ser presidente da república, primeiro ministro, ministro das Finanças, presidente da câmara municipal de Lisboa e presidente do Benfica, em simultâneo."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.1005859375"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798889779
+:article-4798889779 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesAnimal 
+                        :animal-macaco ;
+           :id """4798889779"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """ussaissima"""^^xsd:string ;
+            
+           :text """os arrebentam canelas agora aparecem todos , o <b> preto </b<b> >macaco</b> nao gosta de bananas , o melhor é ir falar com o jose cide"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """1.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798888950
+:article-4798888950 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798888950"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_pyjLUpcSC4"""^^xsd:string ;
+            
+           :text """O oportunismo desenfreado da esquerda está a levar o país um futuro incerto. Há necessidade de parar esta esquerda fedorenta"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798888467
+:article-4798888467 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-racista ;
+                   :referesCountry 
+                        :country-Portugal ;
+           :id """4798888467"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """antonycomentador"""^^xsd:string ;
+            
+           :text """Quando num rebanho de ovelhas uma delas começa a berrar , todas as outras vão a imitar, quando numa alcateia de lobos um começa a uivar os outros seguem o exemplo .<br/>\"Outra coisa é começar a ver as declarações de responsáveis políticos, associativos e as redes sociais para se extrapolarem conclusões de que Portugal é um país terrivelmente <b> racista,</b> xenófobo e insuportável.\"<br/>Os oportunistas da politica  quando convém, berram e uivam ."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.24166666666666667"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798886302
+:article-4798886302 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798886302"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_EJLoQqNK0r"""^^xsd:string ;
+            
+           :text """#vergonhaéserracista"""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798886153
+:article-4798886153 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798886153"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """binopardal"""^^xsd:string ;
+            
+           :text """o objetivo deste anormal é dividir mas nunca irá reinar."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798884187
+:article-4798884187 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798884187"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_80bBIeF4jj"""^^xsd:string ;
+            
+           :text """Estamos perante um tipo perigoso. Agitador e perigoso."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.6"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798883028
+:article-4798883028 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+           :id """4798883028"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """mariaportuguesa"""^^xsd:string ;
+            
+           :text """Concordo inteiramente com o Ventura."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798880558
+:article-4798880558 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-viol-ncia ;
+           :id """4798880558"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_WTj2IWKjT1"""^^xsd:string ;
+            
+           :text """As autoridades e o governo há 5 anos que fecham os olhos à violência no desporto e nos recintos desportivos e agora fingem que estão preocupados."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """-0.5"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-4798878322
+:article-4798878322 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesSport 
+                        :sport-Futebol ;
+                   :referesPerson 
+                        :person-Andr-_Ventura ;
+           :id """4798878322"""^^xsd:string ;
+            
+           :sourceUrl """https://sol.sapo.pt/artigo/686388/andre-ventura-critica-mensagem-de-solidariedade-de-costa-para-marega-era-a-esta-hipocrisia-que-me-referia"""^^xsd:string ;
+            
+           :timestamp """NA"""^^xsd:string ;
+            
+           :user """disqus_HVgeFFuj93"""^^xsd:string ;
+            
+           :text """Apoiado André Ventura 👍.
+O pote de unto está solidário com um jogador de futebol porque foi insultado,mas nunca esteve solidário com os polícias agredidos,com os condutores de autocarros insultados e agredidos,com os médicos agredidos,com os professores insultados e espancados,etc ...<br/>Temos um verme como primeiro ministro deste país."""^^xsd:string ;
+            
+           :type """post"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :sentimentAnalysis """0.0"""^^xsd:string .
+
