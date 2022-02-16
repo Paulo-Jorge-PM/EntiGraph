@@ -1,0 +1,126 @@
+
+###  http://sparql.entigraph.di.pt/corpus#article-79
+:article-79 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-gato ;
+                   :referesAnimal 
+                        :animal-gato ;
+           :id """79"""^^xsd:string ;
+            
+           :sourceUrl """http://localhost:3000/#/posts/79"""^^xsd:string ;
+            
+           :typePost """Artifact"""^^xsd:string ;
+            
+           :user """1"""^^xsd:string ;
+            
+           :userName """Paulo Martins"""^^xsd:string ;
+            
+           :dateCreated """2022-02-16"""^^xsd:string ;
+            
+           :title """gato"""^^xsd:string ;
+            
+           :body """"""^^xsd:string ;
+            
+           :text """gato  [] [] undefined undefined"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :year """2022"""^^xsd:string ;
+            
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-80
+:article-80 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :id """80"""^^xsd:string ;
+            
+           :sourceUrl """http://localhost:3000/#/posts/80"""^^xsd:string ;
+            
+           :typePost """Artifact"""^^xsd:string ;
+            
+           :user """1"""^^xsd:string ;
+            
+           :userName """Paulo Martins"""^^xsd:string ;
+            
+           :dateCreated """2022-02-16"""^^xsd:string ;
+            
+           :title """António Costa"""^^xsd:string ;
+            
+           :body """"""^^xsd:string ;
+            
+           :text """António Costa  undefined undefined"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :year """2022"""^^xsd:string ;
+            
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-81
+:article-81 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-vaca ;
+           :id """81"""^^xsd:string ;
+            
+           :sourceUrl """http://localhost:3000/#/posts/81"""^^xsd:string ;
+            
+           :typePost """Artifact"""^^xsd:string ;
+            
+           :user """1"""^^xsd:string ;
+            
+           :userName """Paulo Martins"""^^xsd:string ;
+            
+           :dateCreated """2022-02-16"""^^xsd:string ;
+            
+           :title """Vaca"""^^xsd:string ;
+            
+           :body """"""^^xsd:string ;
+            
+           :text """Vaca"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :year """2022"""^^xsd:string ;
+            
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-82
+:article-82 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :id """82"""^^xsd:string ;
+            
+           :sourceUrl """http://localhost:3000/#/posts/82"""^^xsd:string ;
+            
+           :typePost """Artifact"""^^xsd:string ;
+            
+           :user """1"""^^xsd:string ;
+            
+           :userName """Paulo Martins"""^^xsd:string ;
+            
+           :dateCreated """2022-02-16"""^^xsd:string ;
+            
+           :title """António Costa"""^^xsd:string ;
+            
+           :body """"""^^xsd:string ;
+            
+           :text """António Costa"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :year """2022"""^^xsd:string ;
+            
+           :sentimentAnalysis """"""^^xsd:string .
+

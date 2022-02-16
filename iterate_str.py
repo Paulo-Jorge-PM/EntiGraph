@@ -17,22 +17,20 @@ __version__ = "0.1.0"
 __license__ = "MIT"
 
 
+
+
+#SCRIPT_DIR = pathlib.Path(__file__).resolve(strict=True).parent
+
+#SCRIPT_DIR = pathlib.Path(filename).resolve().parent
+
+SCRIPT_DIR = "/home/paulo/Repos/mei/hiperfolio/EntiGraph"
+
+
 class Iterate:
 
     def __init__(self, filePath=None, allFolder=False, workFolder="ontology1", mainClass="", skeleton=None, sourceLang="en", sentiment=False, json=None, fieldColumns='{"id":"", "sourceUrl":"", "typePost":"", "user":"", "userName": "", "dateCreated": "", "title":"", "body":"", "text":"", "source":"hiperfolio", "year":""}'):
 		
-        self.SCRIPT_DIR = pathlib.Path(os.path.abspath("__file__")).resolve().parent       
-        
-        ### If called from CLI (e.g. NodeJS server) __file__ dont exist
-        ### And it will give the CLI parent folder. In our case NodeJS is at (server under Entigraph, just go up parent and try to get it
-        #tries = 0
-        #while self.SCRIPT_DIR.name != 'EntiGraph':
-        #    self.SCRIPT_DIR = self.SCRIPT_DIR.parent
-        #    tries += 1
-        #    if tries > 5:
-        #        break
-		
-		
+	
         self.filePath = filePath
         self.allFolder = allFolder
         self.workFolder = workFolder#save folder - it will create it or update it adding new individuas if exist
@@ -42,7 +40,7 @@ class Iterate:
         
         self.fieldColumns = fieldColumns
         
-        self.saveFolder = self.SCRIPT_DIR.joinpath('saves', self.workFolder)
+        self.saveFolder = SCRIPT_DIR + '/saves' + "/" + self.workFolder
         
         self.skeleton = self.openSkeleton(newSkeleton=skeleton)
         
@@ -104,8 +102,9 @@ class Iterate:
 
     def openSkeleton(self, newSkeleton=None):
         ### If folder already exist with skeleton use it instead (could have new class's or different template from the base one)
-        targetSkeleton = self.saveFolder.joinpath("data", "ontology_skeleton.ttl")
-        if targetSkeleton.is_file():
+        targetSkeleton = self.saveFolder + "/data" + "/ontology_skeleton.ttl"
+        #if targetSkeleton.is_file():
+        if os.path.exists(targetSkeleton):
             with open(targetSkeleton, "r", encoding="utf-8") as file:
                 skeleton = file.read()
             return skeleton
@@ -113,8 +112,8 @@ class Iterate:
             if newSkeleton:
                 sourceTemplate = newSkeleton
             else:
-                #sourceTemplate = self.SCRIPT_DIR.joinpath("ontology_skeleton.ttl")
-                sourceTemplate = self.SCRIPT_DIR + "ontology_skeleton.ttl"
+                #sourceTemplate = SCRIPT_DIR.joinpath("ontology_skeleton.ttl")
+                sourceTemplate = SCRIPT_DIR + "/ontology_skeleton.ttl"
             with open(sourceTemplate, "r", encoding="utf-8") as file:
                 skeleton = file.read()
             return skeleton

@@ -1,0 +1,7 @@
+
+###  http://sparql.entigraph.di.pt/corpus#entity-GNR
+:entity-GNR rdf:type owl:NamedIndividual ,
+                 :Entity ;
+        :entity "GNR"^^xsd:string .
+
+            

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-cd server
+#cd server
 exec npm start
 
 read -p "Press key to close"

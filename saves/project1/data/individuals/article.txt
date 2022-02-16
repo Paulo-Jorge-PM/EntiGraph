@@ -1,0 +1,39 @@
+
+###  http://sparql.entigraph.di.pt/corpus#article-83
+:article-83 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ,
+                        :keyword-vaca ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-cobra ,
+                        :animal-gato ;
+                   :referesPerson 
+                        :person-Bill_Gates ;
+           :id """83"""^^xsd:string ;
+            
+           :sourceUrl """http://localhost:3000/#/posts/83"""^^xsd:string ;
+            
+           :typePost """Artifact"""^^xsd:string ;
+            
+           :user """1"""^^xsd:string ;
+            
+           :userName """Paulo Martins"""^^xsd:string ;
+            
+           :dateCreated """2022-02-16"""^^xsd:string ;
+            
+           :title """Babelium - Videojogo lúdico-pedagógico"""^^xsd:string ;
+            
+           :body """Acabo de publicar o meu primeiro videojogo, capaz de ensinar vocabulário de uma nova língua. Formato baseado no jogo da cobra, colleciona figuras como animais (gato, cão, vaca) e colecciona as letras dos seus nomes na ordem correta. Projeto patrocinado pelo Bill Gates."""^^xsd:string ;
+            
+           :text """Babelium - Videojogo lúdico-pedagógico Acabo de publicar o meu primeiro videojogo, capaz de ensinar vocabulário de uma nova língua. Formato baseado no jogo da cobra, colleciona figuras como animais (gato, cão, vaca) e colecciona as letras dos seus nomes na ordem correta. Projeto patrocinado pelo Bill Gates. [\"Ruby (computer programming)\"] [\"games development manager\"]"""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :year """2022"""^^xsd:string ;
+            
+           :sentimentAnalysis """"""^^xsd:string .
+
