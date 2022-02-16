@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import os
+import os, sys
 from argparse import ArgumentParser
 from gooey import Gooey, GooeyParser#GUI
 
@@ -9,6 +9,10 @@ from gooey import Gooey, GooeyParser#GUI
 #pythonw --ignore-gooey run.py --filePath xxx etc.
 
 import iterate
+
+if len(sys.argv)>=2:
+    if not '--ignore-gooey' in sys.argv:
+        sys.argv.append('--ignore-gooey')
 
 @Gooey(
     program_name="EntiGraph",
@@ -139,7 +143,7 @@ def cli():
             "--json",
             required=False,
             metavar="JSON Array",
-            default="pt",
+            default=None,
             help="String with a JSON array",
             gooey_options={'visible': False},
             
@@ -161,6 +165,7 @@ def cli():
         print(" > sentiment = " + str(args.sentiment))
         print(" > sourceLang = " + str(args.sourceLang))
         print(" > fieldColumns = " + str(args.fieldColumns))
+        print(" > json = " + str(args.json))
         
         print("\n")
         
@@ -174,7 +179,8 @@ def cli():
         skeleton=args.skeleton, 
         sentiment=args.sentiment,
         sourceLang=args.sourceLang,
-        fieldColumns=args.fieldColumns)
+        fieldColumns=args.fieldColumns,
+        json=args.json)
         
 if __name__ == "__main__":
     cli()

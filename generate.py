@@ -43,7 +43,7 @@ def generate(savePath, skeleton, mainClass):
     saveFinal(finalFile, savePath)
     saveSkeleton(skeleton, savePath)
     
-    print("\n>>> Done! Individuals assembled with the ontology skeleton.\nCheck the saves folder for the result.\nPress enter to exit")
+    print("\n>>> Done! Individuals assembled with the ontology skeleton.\nCheck the saves folder for the result.")
 
 def upateSkeleton(nameClass, skeleton):
     rdf2Insert = newClass(nameClass)

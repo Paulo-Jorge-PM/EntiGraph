@@ -1,0 +1,84 @@
+
+###  http://sparql.entigraph.di.pt/corpus#article-9
+:article-9 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ,
+                        :city-Lisboa ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :id """9"""^^xsd:string ;
+            
+           :sourceUrl """http://localhost:3000/#/posts/9"""^^xsd:string ;
+            
+           :typePost """Activity"""^^xsd:string ;
+            
+           :user """1"""^^xsd:string ;
+            
+           :userName """Paulo"""^^xsd:string ;
+            
+           :dateCreated """2022-02-09"""^^xsd:string ;
+            
+           :title """Novo título sobre cãe, gato"""^^xsd:string ;
+            
+           :body """Novo body, locais como Braga, Lisboa, Portugal, e pessoas como António Costa."""^^xsd:string ;
+            
+           :text """Novo título sobre um cão, gato Novo body, locais como Braga, Lisboa, Portugal, e pessoas como António Costa."""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :year """2021"""^^xsd:string ;
+            
+           :sentimentAnalysis """"""^^xsd:string .
+
+
+###  http://sparql.entigraph.di.pt/corpus#article-9
+:article-9 rdf:type owl:NamedIndividual ,
+                   :Article ;
+                   :articleFrom :Article ;
+                   :referesKeyword 
+                        :keyword-c-o ,
+                        :keyword-gato ;
+                   :referesAnimal 
+                        :animal-c-o ,
+                        :animal-gato ;
+                   :referesCity 
+                        :city-Braga ,
+                        :city-Lisboa ;
+                   :referesCountry 
+                        :country-Portugal ;
+                   :referesPerson 
+                        :person-Ant-nio_Costa ;
+           :id """9"""^^xsd:string ;
+            
+           :sourceUrl """http://localhost:3000/#/posts/9"""^^xsd:string ;
+            
+           :typePost """Activity"""^^xsd:string ;
+            
+           :user """1"""^^xsd:string ;
+            
+           :userName """Paulo"""^^xsd:string ;
+            
+           :dateCreated """2022-02-09"""^^xsd:string ;
+            
+           :title """Novo título sobre cãe, gato"""^^xsd:string ;
+            
+           :body """Novo body, locais como Braga, Lisboa, Portugal, e pessoas como António Costa."""^^xsd:string ;
+            
+           :text """Novo título sobre um cão, gato Novo body, locais como Braga, Lisboa, Portugal, e pessoas como António Costa."""^^xsd:string ;
+            
+           :source """hiperfolio"""^^xsd:string ;
+            
+           :year """2021"""^^xsd:string ;
+            
+           :sentimentAnalysis """"""^^xsd:string .
+

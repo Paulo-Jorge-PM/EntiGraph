@@ -1,0 +1,7 @@
+
+###  http://sparql.entigraph.di.pt/corpus#country-Portugal
+:country-Portugal rdf:type owl:NamedIndividual ,
+                 :Country ;
+        :country "Portugal"^^xsd:string .
+
+            

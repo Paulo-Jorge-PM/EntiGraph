@@ -1,0 +1,9 @@
+
+###  http://sparql.entigraph.di.pt/corpus#person-Ant-nio_Costa
+:person-Ant-nio_Costa rdf:type owl:NamedIndividual ,
+                               :Person ;
+                      :job "Político"^^xsd:string ;
+                      :wikiPage "https://pt.wikipedia.org/wiki/António_Costa"^^xsd:anyURI ;          
+                      :personName "António Costa"^^xsd:string .
+
+            

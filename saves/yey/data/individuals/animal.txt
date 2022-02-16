@@ -1,0 +1,13 @@
+
+###  http://sparql.entigraph.di.pt/corpus#animal-c-o
+:animal-c-o rdf:type owl:NamedIndividual ,
+                 :Animal ;
+        :animal "cão"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#animal-gato
+:animal-gato rdf:type owl:NamedIndividual ,
+                 :Animal ;
+        :animal "gato"^^xsd:string .
+
+            

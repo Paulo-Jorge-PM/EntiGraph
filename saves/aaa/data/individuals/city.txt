@@ -1,0 +1,13 @@
+
+###  http://sparql.entigraph.di.pt/corpus#city-Braga
+:city-Braga rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city "Braga"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#city-Lisboa
+:city-Lisboa rdf:type owl:NamedIndividual ,
+                 :City ;
+        :city "Lisboa"^^xsd:string .
+
+            

@@ -1,0 +1,13 @@
+
+###  http://sparql.entigraph.di.pt/corpus#keyword-c-o
+:keyword-c-o rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "cão"^^xsd:string .
+
+            
+###  http://sparql.entigraph.di.pt/corpus#keyword-gato
+:keyword-gato rdf:type owl:NamedIndividual ,
+                 :Keyword ;
+        :keyword "gato"^^xsd:string .
+
+            

@@ -1,0 +1,7 @@
+
+###  http://sparql.entigraph.di.pt/corpus#politicalParty-PSD
+:politicalParty-PSD rdf:type owl:NamedIndividual ,
+                 :PoliticalParty ;
+        :politicalParty "PSD"^^xsd:string .
+
+            

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-import pathlib, json
+import os, pathlib, json
 
 from ontology import ontology
 
@@ -16,6 +16,8 @@ __email__ = "paulo.jorge.pm@gmail.com"
 __version__ = "0.1.0"
 __license__ = "MIT"
 
+SCRIPT_DIR = pathlib.Path(__file__).resolve(strict=True).parent
+
 class Iterate:
 
     def __init__(self, filePath=None, allFolder=False, workFolder="ontology1", mainClass="", skeleton=None, sourceLang="en", sentiment=False, json=None, fieldColumns=None):
@@ -29,7 +31,7 @@ class Iterate:
         
         self.fieldColumns = fieldColumns
         
-        self.saveFolder = pathlib.Path.cwd().joinpath('saves', self.workFolder)
+        self.saveFolder = SCRIPT_DIR.joinpath('saves', self.workFolder)
         
         self.skeleton = self.openSkeleton(newSkeleton=skeleton)
         
@@ -41,7 +43,7 @@ class Iterate:
             self.startExtraction(self.filePath, self.mainClass, self.workFolder, self.skeleton, self.json)
         else:
             print("Multiple file iterator not yet implemented. Run only one at a time.")
-            #for filePath in pathlib.Path.cwd().joinpath("raw", self.filePath):
+            #for filePath in SCRIPT_DIR.joinpath("raw", self.filePath):
             #    print(str(filePath))
         
         #SAVE AND ASSEMBLE in the folder ./saves/"workFolder"/
@@ -84,7 +86,7 @@ class Iterate:
         return js
 
     def openFile(self, filePath):
-        #filePath = pathlib.Path.cwd().joinpath("raw", filePath)
+        #filePath = SCRIPT_DIR.joinpath("raw", filePath)
         with open(filePath, "r", encoding="utf-8") as file:
             data = file.read()
         return data
@@ -100,7 +102,7 @@ class Iterate:
             if newSkeleton:
                 sourceTemplate = newSkeleton
             else:
-                sourceTemplate = pathlib.Path.cwd().joinpath("ontology_skeleton.ttl")
+                sourceTemplate = SCRIPT_DIR.joinpath("ontology_skeleton.ttl")
             with open(sourceTemplate, "r", encoding="utf-8") as file:
                 skeleton = file.read()
             return skeleton
